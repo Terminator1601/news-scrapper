@@ -1,0 +1,321 @@
+/* Base styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+#headlines {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.headline {
+  margin: 15px 0;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.3s;
+}
+
+.headline a {
+  text-decoration: none;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.headline a:hover {
+  text-decoration: underline;
+}
+
+.source {
+  font-size: 0.9em;
+  transition: color 0.3s;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  margin: 0 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.pagination a:hover {
+}
+
+.pagination a.active {
+  font-weight: bold;
+}
+
+/* Day theme */
+body.day {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1.day {
+  color: #444;
+}
+
+#headlines.day {
+  background-color: #fff;
+}
+
+.headline.day {
+  border-color: #eee;
+}
+
+.headline a.day {
+  color: #007bff;
+}
+
+.headline a.day:hover {
+  color: #0056b3;
+}
+
+.source.day {
+  color: #666;
+}
+
+.pagination a.day {
+  background-color: #f9f9f9;
+  color: #007bff;
+  border-color: #ddd;
+}
+
+.pagination a.day:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.pagination a.active.day {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Night theme */
+body.night {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+h1.night {
+  color: #e0e0e0;
+}
+
+#headlines.night {
+  background-color: #1e1e1e;
+}
+
+.headline.night {
+  border-color: #333;
+}
+
+.headline a.night {
+  color: #bb86fc;
+}
+
+.headline a.night:hover {
+  color: #bb86fc;
+}
+
+.source.night {
+  color: #aaa;
+}
+
+.pagination a.night {
+  background-color: #333;
+  color: #bb86fc;
+  border-color: #444;
+}
+
+.pagination a.night:hover {
+  background-color: #bb86fc;
+  color: #fff;
+  border-color: #bb86fc;
+}
+
+.pagination a.active.night {
+  background-color: #bb86fc;
+  color: #fff;
+  border-color: #bb86fc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+
+  .headline {
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  .pagination a {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  .headline {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+
+  .pagination a {
+    padding: 6px 8px;
+    margin: 0 3px;
+  }
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: #0056b3;
+}
+.run-script-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.run-script-button:hover {
+  background-color: #218838;
+}
+
+.run-script-button:active {
+  background-color: #1e7e34;
+}
+.headline-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.headline {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.status {
+    flex: 1;
+    text-align: left;
+}
+
+.not-available {
+    color: red;
+}
+
+.available {
+    color: green;
+}
+
+/* Day/Night theme styles */
+.day .headline-container {
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+.night .headline-container {
+    background-color: #333;
+    color: #fff;
+}
+
+.day .status, .night .status {
+    color: inherit;
+}
+.headline-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.headline {
+    flex-grow: 1;
+}
+
+.result {
+    flex-shrink: 0;
+    margin-left: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.result .buy {
+    color: #008000; /* Green for 'Buy' */
+}
+
+.result .sell {
+    color: #FF0000; /* Red for 'Sell' */
+}
+
+.result .hold {
+    color: #FFFFFF; /* White for 'Hold/No action' */
+}
+
+/* Theme styles */
+.day .headline-container {
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+.night .headline-container {
+    background-color: #333;
+    color: #fff;
+}
+
+.day .result, .night .result {
+    color: inherit;
+}
