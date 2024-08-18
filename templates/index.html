@@ -11,9 +11,12 @@
     <h1>Stock Market Headlines</h1>
     
     <!-- Form to trigger the Python function -->
-    <form action="{{ url_for('run_script') }}" method="post">
-        <button type="submit" class="run-script-button">Run Script</button>
+    <form id="refresh-form" action="{{ url_for('run_script') }}" method="post" onsubmit="showLoader()">
+        <button type="submit" class="run-script-button">Refresh Headlines</button>
     </form>
+    
+    <!-- Loader -->
+    <div id="loader" class="loader" style="display:none;"></div>
     
     <div id="headlines">
         {% for headline in headlines %}
@@ -35,8 +38,6 @@
         {% endfor %}
     </div>
     
-    
-
     <div class="pagination">
         {% if page > 1 %}
             <a href="{{ url_for('index', page=page-1) }}">Previous</a>
@@ -96,6 +97,10 @@
             document.querySelectorAll('h1, #headlines, .headline, .headline a, .source, .pagination a').forEach(element => {
                 element.classList.add(storedTheme);
             });
+        }
+
+        function showLoader() {
+            document.getElementById('loader').style.display = 'block';
         }
 
         window.onload = loadTheme;
