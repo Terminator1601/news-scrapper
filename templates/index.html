@@ -1,3 +1,133 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Headlines</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Switch to Night Mode</button>
+    <h1>Stock Market Headlines</h1>
+
+
+    <form id="filter-form" action="{{ url_for('index') }}" method="get">
+        <label for="source">Filter by Source:</label>
+        <select name="source" id="source" onchange="this.form.submit()">
+            <option value="">All Sources</option>
+            {% for source in unique_sources %}
+                <option value="{{ source }}" {% if source == selected_source %}selected{% endif %}>{{ source }}</option>
+            {% endfor %}
+        </select>
+    </form>
+    
+
+    <form id="refresh-form" action="{{ url_for('run_script') }}" method="post" onsubmit="showLoader()">
+        <button type="submit" class="run-script-button">Refresh Headlines</button>
+    </form>
+    
+
+    <div id="loader" class="loader" style="display:none;"></div>
+    
+    <div id="headlines">
+        {% for headline in headlines %}
+            {% if not selected_source or headline[0] == selected_source %}
+                <div class="headline-container">
+                    <div class="headline">
+                        {% if headline[2] != 'N/A' %}
+                            <a href="{{ headline[2] }}" target="_blank">{{ headline[1] }}</a>
+                        {% else %}
+                            <h3>{{ headline[1] }}</h3>
+                        {% endif %}
+                        <span class="source">Source: {{ headline[0] }}</span>
+                    </div>
+                    <div class="result">
+                        <span class="{% if headline[4] == 'Buy shares of the company' %}buy{% elif headline[4] == 'Sell shares of the company' %}sell{% else %}hold{% endif %}">
+                            {{ headline[4] }}
+                        </span> 
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    
+    <div class="pagination">
+        {% if page > 1 %}
+            <a href="{{ url_for('index', page=page-1, source=selected_source) }}">Previous</a>
+        {% endif %}
+        
+        {% for p in range(1, total_pages + 1) %}
+            <a href="{{ url_for('index', page=p, source=selected_source) }}" class="{% if p == page %}active{% endif %}"> {{ p }}</a>
+        {% endfor %}
+        
+        {% if page < total_pages %}
+            <a href="{{ url_for('index', page=page+1, source=selected_source) }}">Next</a>
+        {% endif %}
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const toggleButton = document.querySelector('.theme-toggle');
+            const isDay = body.classList.contains('day');
+
+            if (isDay) {
+                body.classList.remove('day');
+                body.classList.add('night');
+                toggleButton.textContent = "Switch to Day Mode";
+                localStorage.setItem('theme', 'night');
+            } else {
+                body.classList.remove('night');
+                body.classList.add('day');
+                toggleButton.textContent = "Switch to Night Mode";
+                localStorage.setItem('theme', 'day');
+            }
+
+            document.querySelectorAll('h1, #headlines, .headline, .headline a, .source, .pagination a').forEach(element => {
+                if (isDay) {
+                    element.classList.remove('day');
+                    element.classList.add('night');
+                } else {
+                    element.classList.remove('night');
+                    element.classList.add('day');
+                }
+            });
+        }
+
+        function loadTheme() {
+            const storedTheme = localStorage.getItem('theme') || 'day'; 
+            const body = document.body;
+            const toggleButton = document.querySelector('.theme-toggle');
+
+            if (storedTheme === 'night') {
+                body.classList.add('night');
+                toggleButton.textContent = "Switch to Day Mode";
+            } else {
+                body.classList.add('day');
+                toggleButton.textContent = "Switch to Night Mode";
+            }
+
+            document.querySelectorAll('h1, #headlines, .headline, .headline a, .source, .pagination a').forEach(element => {
+                element.classList.add(storedTheme);
+            });
+        }
+
+        function showLoader() {
+            document.getElementById('loader').style.display = 'block';
+        }
+
+        window.onload = loadTheme;
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +139,17 @@
 <body>
     <button class="theme-toggle" onclick="toggleTheme()">Switch to Night Mode</button>
     <h1>Stock Market Headlines</h1>
+
+    <!-- Dropdown for selecting source -->
+    <form id="filter-form" action="{{ url_for('index') }}" method="get">
+        <label for="source">Filter by Source:</label>
+        <select name="source" id="source" onchange="this.form.submit()" class="dropdown">
+            <option value="">All Sources</option>
+            {% for source in unique_sources %}
+                <option value="{{ source }}" {% if source == selected_source %}selected{% endif %}>{{ source }}</option>
+            {% endfor %}
+        </select>
+    </form>
     
     <!-- Form to trigger the Python function -->
     <form id="refresh-form" action="{{ url_for('run_script') }}" method="post" onsubmit="showLoader()">
@@ -20,35 +161,37 @@
     
     <div id="headlines">
         {% for headline in headlines %}
-            <div class="headline-container">
-                <div class="headline">
-                    {% if headline[2] != 'N/A' %}
-                        <a href="{{ headline[2] }}" target="_blank">{{ headline[1] }}</a>
-                    {% else %}
-                        <h3>{{ headline[1] }}</h3>
-                    {% endif %}
-                    <span class="source">Source: {{ headline[0] }}</span>
+            {% if not selected_source or headline[0] == selected_source %}
+                <div class="headline-container">
+                    <div class="headline">
+                        {% if headline[2] != 'N/A' %}
+                            <a href="{{ headline[2] }}" target="_blank">{{ headline[1] }}</a>
+                        {% else %}
+                            <h3>{{ headline[1] }}</h3>
+                        {% endif %}
+                        <span class="source">Source: {{ headline[0] }}</span>
+                    </div>
+                    <div class="result">
+                        <span class="{% if headline[4] == 'Buy shares of the company' %}buy{% elif headline[4] == 'Sell shares of the company' %}sell{% else %}hold{% endif %}">
+                            {{ headline[4] }}
+                        </span> 
+                    </div>
                 </div>
-                <div class="result">
-                    <span class="{% if headline[4] == 'Buy shares of the company' %}buy{% elif headline[4] == 'Sell shares of the company' %}sell{% else %}hold{% endif %}">
-                        {{ headline[4] }}
-                    </span> 
-                </div>
-            </div>
+            {% endif %}
         {% endfor %}
     </div>
     
     <div class="pagination">
         {% if page > 1 %}
-            <a href="{{ url_for('index', page=page-1) }}">Previous</a>
+            <a href="{{ url_for('index', page=page-1, source=selected_source) }}">Previous</a>
         {% endif %}
         
         {% for p in range(1, total_pages + 1) %}
-            <a href="{{ url_for('index', page=p) }}" class="{% if p == page %}active{% endif %}"> {{ p }}</a>
+            <a href="{{ url_for('index', page=p, source=selected_source) }}" class="{% if p == page %}active{% endif %}"> {{ p }}</a>
         {% endfor %}
         
         {% if page < total_pages %}
-            <a href="{{ url_for('index', page=page+1) }}">Next</a>
+            <a href="{{ url_for('index', page=page+1, source=selected_source) }}">Next</a>
         {% endif %}
     </div>
 
