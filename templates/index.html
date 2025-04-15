@@ -27,10 +27,10 @@
         <div class="dashboard">
             <aside class="sidebar">
                 <div class="filter-section">
-                    <h2>Filter News</h2>
+                    <h2><i class="fas fa-filter"></i> Filter News</h2>
                     <form id="filter-form" action="{{ url_for('index') }}" method="get">
                         <div class="select-wrapper">
-                            <label for="source">News Source</label>
+                            <label for="source"><i class="fas fa-newspaper"></i> News Source</label>
                             <select name="source" id="source" onchange="this.form.submit()">
                                 <option value="">All Sources</option>
                                 {% for source in unique_sources %}
@@ -44,7 +44,7 @@
                 <div class="stats-section">
                     <div class="stat-card">
                         <div class="stat-icon">
-                            <i class="fas fa-newspaper"></i>
+                            <i class="fas fa-chart-bar"></i>
                         </div>
                         <div class="stat-info">
                             <span class="stat-label">Headlines</span>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon">
-                            <i class="fas fa-filter"></i>
+                            <i class="fas fa-rss"></i>
                         </div>
                         <div class="stat-info">
                             <span class="stat-label">Source</span>
@@ -78,8 +78,8 @@
                         {% if not selected_source or headline[0] == selected_source %}
                             <article class="headline-card" data-aos="fade-up">
                                 <div class="headline-meta">
-                                    <span class="source"><i class="fas fa-globe"></i> {{ headline[0] }}</span>
-                                    <span class="timestamp"><i class="fas fa-clock"></i> {{ headline[3] }}</span>
+                                    <span class="source"><i class="fas fa-broadcast-tower"></i> {{ headline[0] }}</span>
+                                    <span class="timestamp"><i class="fas fa-history"></i> {{ headline[3] }}</span>
                                 </div>
                                 <div class="headline-content">
                                     {% if headline[2] != 'N/A' %}
@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="headline-action">
                                     <span class="result-badge {% if headline[4] == 'Buy shares of the company' %}buy{% elif headline[4] == 'Sell shares of the company' %}sell{% else %}hold{% endif %}">
-                                        <i class="fas {% if headline[4] == 'Buy shares of the company' %}fa-arrow-trend-up{% elif headline[4] == 'Sell shares of the company' %}fa-arrow-trend-down{% else %}fa-minus{% endif %}"></i>
+                                        <i class="fas {% if headline[4] == 'Buy shares of the company' %}fa-chart-line{% elif headline[4] == 'Sell shares of the company' %}fa-chart-line-down{% else %}fa-balance-scale{% endif %}"></i>
                                         {{ headline[4] }}
                                     </span>
                                 </div>
@@ -111,6 +111,10 @@
             <span>Updating Market Data...</span>
         </div>
     </div>
+
+    <button id="scroll-top" class="scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script>
         function toggleTheme() {
@@ -187,34 +191,27 @@
             });
         }
 
-        // Add smooth scroll-to-top
-        const scrollToTop = () => {
+        // Scroll to top functionality
+        const scrollTopButton = document.getElementById('scroll-top');
+        
+        window.onscroll = function() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                scrollTopButton.classList.add('visible');
+            } else {
+                scrollTopButton.classList.remove('visible');
+            }
+        };
+        
+        function scrollToTop() {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
-        };
-
-        // Show/hide scroll-to-top button
-        window.addEventListener('scroll', () => {
-            const scrollBtn = document.querySelector('.scroll-to-top');
-            if (window.scrollY > 300) {
-                scrollBtn?.classList.add('visible');
-            } else {
-                scrollBtn?.classList.remove('visible');
-            }
-        });
+        }
 
         // Initialize
         window.addEventListener('load', () => {
             loadTheme();
-            
-            // Add scroll-to-top button
-            const scrollBtn = document.createElement('button');
-            scrollBtn.className = 'scroll-to-top';
-            scrollBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
-            scrollBtn.addEventListener('click', scrollToTop);
-            document.body.appendChild(scrollBtn);
         });
     </script>
 </body>
