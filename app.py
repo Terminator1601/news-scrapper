@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 import csv
+import os
 import subprocess
 import sys
 import threading
@@ -127,6 +128,9 @@ def chat_api():
 
 @app.route('/run_script', methods=['POST'])
 def run_script():
+    if os.environ.get('VERCEL'):
+        return ('Refreshing is not available on the hosted version: the scraper '
+                'needs a writable disk. Run it locally and push the data.', 503)
     if not refresh_lock.acquire(blocking=False):
         return 'A refresh is already running. Try again in a minute.', 409
     try:

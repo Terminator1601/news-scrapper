@@ -81,9 +81,14 @@ def now():
 
 
 def connect():
-    conn = sqlite3.connect(DB_FILE)
+    try:
+        conn = sqlite3.connect(DB_FILE)
+        conn.executescript(SCHEMA)
+    except sqlite3.OperationalError:
+        # Read-only deployment (e.g. serverless): open the bundled database
+        # without touching the schema. Raises if the file does not exist.
+        conn = sqlite3.connect(f"file:{DB_FILE}?mode=ro", uri=True)
     conn.row_factory = sqlite3.Row
-    conn.executescript(SCHEMA)
     return conn
 
 
@@ -357,19 +362,27 @@ def refresh_story_version(story_id):
 # ------------------------------------------------------------- reader state
 
 def mark_read(story_id, version_id):
-    conn = connect()
-    conn.execute(
-        """INSERT INTO reader_story_state (story_id, read_version_id, marked_at)
-           VALUES (?, ?, ?)
-           ON CONFLICT(story_id) DO UPDATE SET read_version_id = ?, marked_at = ?""",
-        (story_id, version_id, now(), version_id, now()))
-    conn.commit()
-    conn.close()
+    """Store the read version. Returns False on a read-only deployment."""
+    try:
+        conn = connect()
+        conn.execute(
+            """INSERT INTO reader_story_state (story_id, read_version_id, marked_at)
+               VALUES (?, ?, ?)
+               ON CONFLICT(story_id) DO UPDATE SET read_version_id = ?, marked_at = ?""",
+            (story_id, version_id, now(), version_id, now()))
+        conn.commit()
+        conn.close()
+        return True
+    except sqlite3.OperationalError:
+        return False
 
 
 def story_view(story_id):
     """Everything the story page needs, including the since-you-read delta."""
-    conn = connect()
+    try:
+        conn = connect()
+    except sqlite3.OperationalError:
+        return None  # no database in this deployment yet
     story = conn.execute("SELECT * FROM stories WHERE id = ?", (story_id,)).fetchone()
     if story is None:
         conn.close()
@@ -397,7 +410,10 @@ def story_view(story_id):
 
 
 def list_stories():
-    conn = connect()
+    try:
+        conn = connect()
+    except sqlite3.OperationalError:
+        return []  # no database in this deployment yet
     rows = conn.execute(
         """SELECT s.*,
                   (SELECT COUNT(*) FROM story_articles sa WHERE sa.story_id = s.id) AS article_count,
