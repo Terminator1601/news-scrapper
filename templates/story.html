@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}{{ view.story.title }} — Market Pulse{% endblock %}
+
+{% block content %}
+    <main class="layout layout-single">
+        <article class="wire story-page">
+            <p class="crumb"><a href="{{ url_for('stories') }}">Followed stories</a></p>
+            <h1 class="page-title">{{ view.story.title }}</h1>
+            <p class="page-intro">{{ view.articles|length }} article{{ 's' if view.articles|length != 1 }} from {{ source_names|length }} source{{ 's' if source_names|length != 1 }}{% if view.latest %} — version {{ view.latest.rev }}, {{ view.latest.created_at[:16].replace('T', ' ') }} UTC{% endif %}</p>
+
+            {% if view.updates %}
+                <section class="catchup">
+                    <h2 class="catchup-title">Since you last read</h2>
+                    <ol class="catchup-list">
+                        {% for update in view.updates %}
+                            <li>
+                                <span class="change-kind">{{ update.change_kind.replace('_', ' ') }}</span>
+                                {{ update.change_note }}
+                            </li>
+                        {% endfor %}
+                    </ol>
+                </section>
+            {% elif view.read_version %}
+                <p class="caught-up">You're caught up: nothing substantive has changed since you read version {{ view.read_version.rev }}.</p>
+            {% endif %}
+
+            {% if view.latest %}
+                <section class="summary-block">
+                    <h2 class="section-heading">Summary</h2>
+                    <p class="story-summary">{{ view.latest.summary }}</p>
+                    {% if view.latest.status == 'insufficient' %}
+                        <p class="thin-note">The available sources only provide headlines, so this stays an attributed note rather than a full summary.</p>
+                    {% endif %}
+                    <ul class="claims">
+                        {% for claim in claims %}
+                            <li>{{ claim.text }} <span class="claim-sources">{{ claim.source_names|join(', ') }}</span></li>
+                        {% endfor %}
+                    </ul>
+                    <form action="{{ url_for('story_mark_read', story_id=view.story.id) }}" method="post">
+                        <input type="hidden" name="version_id" value="{{ view.latest.id }}">
+                        {% if not view.read_version or view.read_version.rev < view.latest.rev %}
+                            <button type="submit" class="button-primary">Mark read</button>
+                        {% else %}
+                            <button type="submit" class="button-quiet" disabled>✓ Read</button>
+                        {% endif %}
+                    </form>
+                </section>
+            {% endif %}
+
+            <section>
+                <h2 class="section-heading">Timeline</h2>
+                <ol class="timeline">
+                    {% for version in view.versions|reverse %}
+                        <li class="timeline-item{% if view.read_version and version.rev == view.read_version.rev %} is-read-marker{% endif %}">
+                            <span class="timeline-when">v{{ version.rev }} — {{ version.created_at[:16].replace('T', ' ') }} UTC</span>
+                            <span class="change-kind">{{ version.change_kind.replace('_', ' ') }}</span>
+                            <p>{{ version.change_note }}</p>
+                            {% if view.read_version and version.rev == view.read_version.rev %}
+                                <p class="read-marker">You read this version</p>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ol>
+            </section>
+
+            <section>
+                <h2 class="section-heading">Coverage</h2>
+                <ul class="coverage">
+                    {% for article in view.articles %}
+                        <li>
+                            <span class="story-source">{{ article.source_name }}</span>
+                            <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
+                            {% if article.access == 'html' %}<span class="access-note">headline only</span>{% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </article>
+    </main>
+{% endblock %}

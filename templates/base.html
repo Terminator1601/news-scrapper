@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Market Pulse{% endblock %}</title>
+    <script>
+        // Apply saved theme before first paint to avoid a flash
+        (function () {
+            try {
+                var theme = localStorage.getItem('theme');
+                if (!theme) {
+                    theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                }
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) { /* storage unavailable; default theme applies */ }
+        })();
+    </script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M2 14 L7 14 L10 5 L14 19 L17 11 L22 11' stroke='%2315604B' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="masthead">
+        <div class="masthead-inner">
+            <a class="brand" href="{{ url_for('index') }}">
+                <svg class="brand-mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M2 14 L7 14 L10 5 L14 19 L17 11 L22 11" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="brand-name">Market Pulse</span>
+            </a>
+            <nav class="masthead-nav" aria-label="Pages">
+                <a href="{{ url_for('index') }}" {% if request.endpoint == 'index' %}class="is-current"{% endif %}>Briefing</a>
+                <a href="{{ url_for('stories') }}" {% if request.endpoint in ('stories', 'story_detail') %}class="is-current"{% endif %}>Stories</a>
+            </nav>
+            {% block masthead_extra %}{% endblock %}
+            <div class="masthead-actions">
+                {% block masthead_actions %}{% endblock %}
+                <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch theme">
+                    <svg class="icon-sun" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <circle cx="8" cy="8" r="3.2" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M8 1.2v1.6M8 13.2v1.6M1.2 8h1.6M13.2 8h1.6M3.2 3.2l1.1 1.1M11.7 11.7l1.1 1.1M12.8 3.2l-1.1 1.1M4.3 11.7l-1.1 1.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M13.5 9.5A6 6 0 0 1 6.5 2.5a6 6 0 1 0 7 7Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <div class="chat-widget">
+        <section class="chat-panel" id="chat-panel" hidden aria-label="Market Pulse assistant">
+            <header class="chat-head">
+                <h2>Ask Market Pulse</h2>
+                <button type="button" class="chat-close" id="chat-close" aria-label="Close assistant">✕</button>
+            </header>
+            <div class="chat-log" id="chat-log" aria-live="polite">
+                <div class="chat-msg chat-msg-bot">Ask me about today's headlines, a company, or anything in the markets.</div>
+                <div class="chat-starters" id="chat-starters">
+                    <button type="button">What's moving the market today?</button>
+                    <button type="button">Catch me up on the Jio IPO</button>
+                    <button type="button">Which stocks have sell signals?</button>
+                </div>
+            </div>
+            <form class="chat-form" id="chat-form">
+                <label class="visually-hidden" for="chat-input">Your question</label>
+                <input id="chat-input" type="text" autocomplete="off" maxlength="2000" placeholder="Ask about a headline or company">
+                <button type="submit" class="button-primary" id="chat-send">Send</button>
+            </form>
+        </section>
+        <button type="button" class="chat-fab" id="chat-fab" aria-expanded="false" aria-label="Open assistant">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 5.5h16v11H9l-5 4v-15Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M8 10h8M8 13h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', function () {
+            var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            try { localStorage.setItem('theme', next); } catch (e) { /* ignore */ }
+        });
+
+        (function () {
+            var fab = document.getElementById('chat-fab');
+            var panel = document.getElementById('chat-panel');
+            var closeButton = document.getElementById('chat-close');
+            var form = document.getElementById('chat-form');
+            var input = document.getElementById('chat-input');
+            var send = document.getElementById('chat-send');
+            var log = document.getElementById('chat-log');
+            var starters = document.getElementById('chat-starters');
+            var history = [];
+            var busy = false;
+
+            starters.addEventListener('click', function (event) {
+                var button = event.target.closest('button');
+                if (!button) return;
+                input.value = button.textContent;
+                form.requestSubmit();
+            });
+
+            function setOpen(open) {
+                panel.hidden = !open;
+                fab.setAttribute('aria-expanded', String(open));
+                if (open) input.focus();
+            }
+            fab.addEventListener('click', function () { setOpen(panel.hidden); });
+            closeButton.addEventListener('click', function () { setOpen(false); });
+
+            function append(role, text) {
+                var bubble = document.createElement('div');
+                bubble.className = 'chat-msg chat-msg-' + role;
+                bubble.textContent = text;
+                log.appendChild(bubble);
+                log.scrollTop = log.scrollHeight;
+                return bubble;
+            }
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                var question = input.value.trim();
+                if (!question || busy) return;
+                busy = true;
+                send.disabled = true;
+                if (starters) { starters.remove(); starters = null; }
+                input.value = '';
+                append('user', question);
+                history.push({ role: 'user', text: question });
+                var pending = append('bot', '');
+                pending.classList.add('chat-typing');
+                pending.innerHTML = '<span></span><span></span><span></span>';
+
+                fetch('/api/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ messages: history })
+                })
+                    .then(function (response) {
+                        return response.json().then(function (data) {
+                            if (!response.ok) throw new Error(data.error || 'The assistant could not answer.');
+                            return data.reply;
+                        });
+                    })
+                    .then(function (reply) {
+                        pending.classList.remove('chat-typing');
+                        pending.textContent = reply;
+                        history.push({ role: 'bot', text: reply });
+                    })
+                    .catch(function (error) {
+                        pending.classList.remove('chat-typing');
+                        pending.classList.add('is-error');
+                        pending.textContent = error.message;
+                    })
+                    .finally(function () {
+                        busy = false;
+                        send.disabled = false;
+                        input.focus();
+                        log.scrollTop = log.scrollHeight;
+                    });
+            });
+        })();
+    </script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

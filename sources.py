@@ -1,10 +1,6 @@
 # news_sources.py
 
 news_sources = {
-    "CNN Business": {
-        "url": "https://edition.cnn.com/business",
-        "headline_tags": ["h1", "h3"],
-    },
     "Live Mint": {
         "url": "https://www.livemint.com/",
         "headline_tags": ["h1", "h3"],
@@ -29,9 +25,14 @@ news_sources = {
         "url": "https://www.indiatoday.in/",
         "headline_tags": ["h1", "h2", "h3"],
     },
+    # NDTV's website returns 403 to non-browser clients, so use its RSS feeds
     "NDTV": {
-        "url": "https://www.ndtv.com/",
-        "headline_tags": ["h1", "h2", "h3"],
+        "url": "https://feeds.feedburner.com/ndtvnews-top-stories",
+        "type": "rss",
+    },
+    "NDTV-Profit": {
+        "url": "https://feeds.feedburner.com/ndtvprofit-latest",
+        "type": "rss",
     },
     "The-Hindu": {
         "url": "https://www.thehindu.com/",

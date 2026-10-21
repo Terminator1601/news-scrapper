@@ -1,0 +1,4910 @@
+{
+ "a5859e6ce58d65eb": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Tesla",
+  "rationale": "A potential merger between Musk's companies could create significant synergies and value for Tesla shareholders."
+ },
+ "bd4c26f698ca5cf1": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General consumer commentary without direct market action."
+ },
+ "16c2bd8896245756": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Broad industry comparison without immediate investment direction."
+ },
+ "ee63b5a840a16af2": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Macropolitical commentary not tied to specific equity actions."
+ },
+ "22cf780138e7a6e5": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General commentary on trade policy impacts."
+ },
+ "5761ee8f910125fa": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Geopolitical event with mixed or unclear regional economic impact."
+ },
+ "40afdfd8483592b7": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "SpaceX",
+  "rationale": "A promotional share giveaway for children does not impact private valuation or public retail investing."
+ },
+ "b58666286428f229": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Entertainment industry news."
+ },
+ "c819b9d32d64e672": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Vague warning about market risks provides no clear trading direction."
+ },
+ "fdb287748f146e8e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Technological speculation without specific company financials."
+ },
+ "ee34b8877e1e1811": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "A deepening global tech selloff suggests reducing exposure to overvalued AI stocks."
+ },
+ "dbacd14c61151132": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Six Flags",
+  "rationale": "Ongoing financial trouble indicates poor performance for investors."
+ },
+ "6a9c5e97e7beed55": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Meta",
+  "rationale": "Strategic pivot to hardware is a long-term play with mixed short-term certainty."
+ },
+ "fac3c95bdf1b16a9": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Human interest and legal dispute story."
+ },
+ "87ab60d6e24e4458": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "CoreWeave",
+  "rationale": "Debt drama and credit concerns suggest reducing risk in related sectors."
+ },
+ "5a3a9e2862b1539d": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Microsoft",
+  "rationale": "General platform trends do not immediately move the stock."
+ },
+ "ed928e4239e9d464": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "War-disrupted global trade routes negatively impact shipping and supply chains."
+ },
+ "c6b68dea8abc814b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Medical and ethical issue rather than a stock market signal."
+ },
+ "8137ba4508f029ab": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Tesla",
+  "rationale": "Product innovation announcements can drive speculative enthusiasm."
+ },
+ "2edc815b3205757c": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Macroeconomic and political commentary without immediate actionable trades."
+ },
+ "4a6cc4949c76e820": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Inflation data is priced in or requires macroeconomic context."
+ },
+ "ad6927eb179d56b8": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Legal and ethical discussion on AI."
+ },
+ "ad7be6916e920d4d": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Call for public opinion on AI safety."
+ },
+ "49fee7aa8818a953": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Consumer confidence surveys reflect broader sentiment rather than direct investment triggers."
+ },
+ "162def203b7ed9ce": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Personal finance inquiry without stock market impact."
+ },
+ "16c7c3a93eb4ebac": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Personal budgeting profile."
+ },
+ "a5367877d489ece3": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Educational retirement account comparison."
+ },
+ "f534f5088ad9555d": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Government benefit adjustments do not affect direct equity performance."
+ },
+ "937edbd3885045eb": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "High mortgage rates negatively impact real estate and homebuilder stocks."
+ },
+ "3fb1185987cadb80": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Standard personal finance advice on savings vehicles."
+ },
+ "ead9f188655b11f4": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Federal Reserve warnings are priced into market expectations."
+ },
+ "490929387aae6bc0": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Promotional savings challenge."
+ },
+ "bdb44ffd0ff37bc0": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Media podcast episode description."
+ },
+ "c0eb534a4bb12e3a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Leadership interview and career profiles."
+ },
+ "4eb7c8c7a4458cee": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Retail petroleum industry mechanics explanation."
+ },
+ "234492ca8f6fc7dd": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Media analysis on cash usage trends."
+ },
+ "c4744fb77a83b6de": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "War-driven household costs drag down consumer discretionary spending."
+ },
+ "b89650d736314447": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Agricultural economic distress signals challenges for agribusiness and farming sectors."
+ },
+ "ef09ca1f8fa87842": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Infrastructure policy analysis without active market signals."
+ },
+ "9b39fc146db60bf4": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Legal opinions on tariffs create regulatory uncertainty rather than immediate trading direction."
+ },
+ "aa093118ab260348": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Persistent inflation impacts consumer purchasing power broadly without giving a specific trading signal."
+ },
+ "2e4a43a117371e7b": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Surging yields create volatility and market uncertainty, suggesting a cautious hold position."
+ },
+ "588a2bb071b96a76": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General economic commentary on rising costs offers no direct stock action."
+ },
+ "f44700c6ca668ebf": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Real estate trends driven by AI wealth highlight localized market activity rather than actionable stocks."
+ },
+ "ef1747d85f145c46": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline concerns television entertainment rather than financial markets."
+ },
+ "7ef7204153f8b0db": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Media personnel changes are primarily corporate news without direct market impact."
+ },
+ "aec2771ba29e8180": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "China Economy",
+  "rationale": "Economic growth driven by an AI export boom signals positive momentum for trade and technology sectors."
+ },
+ "9b5285ba1d8d93ad": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a geopolitical and crime-related news story."
+ },
+ "8d04704c3ac36c64": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This story concerns political access and legal actions involving news outlets."
+ },
+ "41ae994c4a418637": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline focuses on property theft and illegal resale rather than corporate valuation."
+ },
+ "8f0f18806d91903d": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Agricultural Sector",
+  "rationale": "Government farm relief plans provide financial support to ease input costs for the agricultural sector."
+ },
+ "93e7583c05e25cf1": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General media commentary on business and politics provides no specific trading directive."
+ },
+ "9127ba24cd0658db": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Monetary policy discussions are foundational to markets but require deeper data for action."
+ },
+ "3a2fbbbbc73f6b77": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Higher education costs are a social and consumer topic rather than a stock market driver."
+ },
+ "cbb224db21b203ec": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Labor market impacts from policy changes have broad, mixed effects across industries."
+ },
+ "8216bf72154514c6": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "AI workforce integration is a long-term structural trend without a single actionable trade."
+ },
+ "383f0e41a6b9f757": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Seasonal travel price inflation affects consumer budgets rather than single stock trajectories."
+ },
+ "cfddceddf699d5ea": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Flying taxis represent a speculative, long-term futuristic theme."
+ },
+ "a4bc7a4ad7a82d7e": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Early-stage startup profiles lack sufficient financial data for public market investing."
+ },
+ "347058ffcd373ad3": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "LVMH",
+  "rationale": "A brand showcase tour provides promotional visibility rather than a quantitative catalyst."
+ },
+ "c10b2c66ff773d9a": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Central bank and government inflation-fighting efforts set a baseline economic tone."
+ },
+ "6781470582ed165b": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Controversial medical practices in an industry can invite regulatory scrutiny and legal risk."
+ },
+ "a7a1dac8bc5261f4": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Tax filing deadlines are personal administrative tasks for consumers."
+ },
+ "cf360b7e344fb277": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Job interview advice is career guidance rather than financial market news."
+ },
+ "e5f5ff4d3dc9bf78": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Interest rate cuts generally stimulate equity markets and real estate."
+ },
+ "2be322f83031a420": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Medical health symptoms related to personal finances are not stock market indicators."
+ },
+ "a70ac0f1a2887684": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Apple",
+  "rationale": "Corporate espionage and leak allegations create regulatory and legal headwinds for the involved tech firms."
+ },
+ "a2dfadec7ccc907d": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Grab",
+  "rationale": "Strategic AI partnerships in emerging markets can enhance technological capabilities and growth."
+ },
+ "1da810f0fa7ca2a8": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Character.ai",
+  "rationale": "Bankruptcy filings and severe litigation destroy equity value."
+ },
+ "ed36771d91186600": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Apple",
+  "rationale": "New product announcements targeting the AI push can drive hardware sales and user engagement."
+ },
+ "acb67fc3197915df": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Corporate personnel decisions within news media are not market-moving events."
+ },
+ "de37c870651ee0c9": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "First Amendment legal battles involving press access are political and legal news."
+ },
+ "21e2ffa4c806e1e7": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Government investigations into media networks are political rather than market-driven."
+ },
+ "602908758dcde02c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Editorial decisions by news networks regarding political coverage are media industry commentary."
+ },
+ "9ba95109b202f76b": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Local political housing policy proposals impact real estate markets broadly without specific ticker action."
+ },
+ "1a3d7ad7660e42c0": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Housing market conditions require regional analysis rather than a generalized stock signal."
+ },
+ "e4547b8ebf9955dd": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Legislation softening institutional investor bans can increase capital flow into residential real estate."
+ },
+ "b777be514f7128ef": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Profiles of real estate industry executives offer insights into operational shifts rather than immediate trades."
+ },
+ "d67fe2ae456d57ca": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Smart home safety technology innovations open up growing demographic market segments."
+ },
+ "34ee00f326306739": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Nokia",
+  "rationale": "High-profile space technology contracts validate technological leadership and provide PR and revenue opportunities."
+ },
+ "b115ce556e79798f": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "IEA",
+  "rationale": "Positive outlook on electric vehicles suggests growth for the clean energy sector."
+ },
+ "e860204a99e05bdf": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline discusses general technology trends without direct investment implications."
+ },
+ "47786496779546f2": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Uncertainty surrounding AI valuation warrants a neutral stance."
+ },
+ "cfcd03ab90dfc0c8": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a political story focused on local policy rather than corporate investing."
+ },
+ "d40bcad4b648596a": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Anthropic",
+  "rationale": "New AI tool negatively impacts software stocks, suggesting reduced exposure."
+ },
+ "00a1dfbb2097148f": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "SpaceX",
+  "rationale": "Ambitious space AI plans indicate high growth potential for related tech."
+ },
+ "5056461bf046ad22": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Industries",
+  "rationale": "The IPO acts as a positive catalyst boosting RIL shares."
+ },
+ "2e8a17ec465498ec": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Anthropic",
+  "rationale": "Substantial financial losses indicate heightened risk."
+ },
+ "621a246eaab60c9b": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "General upward momentum in the stock market encourages bullish positioning."
+ },
+ "0fe22ea8a2c62d6e": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "State Bank of India",
+  "rationale": "A confirmed cyberattack introduces operational and reputational risk."
+ },
+ "70edb8f179f433f5": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Strong rally in IT stocks signals positive momentum for the sector."
+ },
+ "216c1d7f3714da0a": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Pernod Ricard",
+  "rationale": "Regulatory probes create short-term uncertainty for the companies involved."
+ },
+ "c2df3e0f16ff27c9": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Macroeconomic trade deal discussions require monitoring before taking action."
+ },
+ "7559e280f292307c": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Growth in the deep-tech enterprise pipeline points toward long-term market opportunities."
+ },
+ "d41b3399a8cdc527": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "L&T",
+  "rationale": "Proactive governance steps support continued growth despite rising scale."
+ },
+ "97fa56750c7447db": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline covers a personal obituary and influencer profile rather than market news."
+ },
+ "ceb98e32214d9bd4": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Industries",
+  "rationale": "High-profile diplomatic visits to corporate facilities highlight strategic importance."
+ },
+ "84d693dc89d5e4f5": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Routine reporting of fuel prices has no specific directional investment signal."
+ },
+ "702e5ef6a3232808": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Port corporatization reforms signal improved operational efficiency and infrastructure investment."
+ },
+ "1be220de97ab17b2": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "The LaLiT",
+  "rationale": "Capital expenditure for expansion reflects confidence and business growth."
+ },
+ "4bf69e596762831f": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Hindustan Zinc",
+  "rationale": "Strong Q2 earnings driven by cost efficiencies and high prices warrant a buy."
+ },
+ "719cebcedc075a91": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "UCO Bank",
+  "rationale": "Successful capital raising improves liquidity and avoids high funding costs."
+ },
+ "8a7a7fe36c3f6314": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "L&T",
+  "rationale": "Corporate restructuring measures reinforce growth momentum."
+ },
+ "e82c034b53033ac2": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "Apple",
+  "rationale": "A product review focuses on consumer features rather than immediate stock direction."
+ },
+ "8a49f910acfd3784": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "DLF",
+  "rationale": "Strong rebound and high pre-sales demonstrate solid demand in the luxury sector."
+ },
+ "bec73148488c81b8": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Broad fiscal commentary on foreign protests offers macroeconomic context only."
+ },
+ "3973665fcecffacc": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Analysis of global equity trends regarding AI hype suggests a neutral stance."
+ },
+ "e64f76dce8250a60": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Direct stock recommendations provide actionable buying ideas."
+ },
+ "921268d195098ab4": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Infrastructure development reporting lacks direct corporate equity signals."
+ },
+ "7a8c2f1cb2061a4a": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Tata Motors",
+  "rationale": "Minority shareholder hurdles create deal friction that requires monitoring."
+ },
+ "b2e4382600cfbb5f": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Outbound M&A push by IT firms signals strategic expansion and sector growth."
+ },
+ "1dbfe292fd08530f": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "ESDS",
+  "rationale": "A successful IPO combined with strong revenue projections for AI chips makes it attractive."
+ },
+ "b69ba6d8f038571e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Labor and operational practices in healthcare chains are not primarily stock market news."
+ },
+ "bf6d13fb7c20dc6c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political promises regarding voter welfare are not actionable stock signals."
+ },
+ "2e28a1771a4514cc": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Increased oil supply puts downward pressure on commodity prices."
+ },
+ "6586e55fc3acd462": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Monetary policy headwinds from the Fed pose risks to high-flying tech sectors."
+ },
+ "ec469033966435b6": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "General Motors",
+  "rationale": "Revenue growth despite lower volume demonstrates strong pricing power."
+ },
+ "0ca72e4fe242b30e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "Apple",
+  "rationale": "Product reviews are consumer-oriented rather than actionable financial catalysts."
+ },
+ "4081f1866401f53a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Self-help and lifestyle advice has no connection to financial markets."
+ },
+ "6d12c8bbe9bc4e93": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Scientific prizes and medical research news do not translate directly to equity trades."
+ },
+ "2f9bf2c70bcec07c": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Using options strategically can enhance portfolio leverage and returns."
+ },
+ "354266d7a87c147b": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "South Indian Bank",
+  "rationale": "Strong recent momentum suggests further upside potential for investors."
+ },
+ "a90b6a56f95f193b": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "PC Jeweller",
+  "rationale": "The stock is showing strong upward momentum with significant recent gains."
+ },
+ "f6f6c4d13e24ec4b": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Tracking commodity retail rates provides informational value without a directional trade signal."
+ },
+ "54fdf52d90ec5814": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Comparing fund types helps with asset allocation rather than generating a single trade signal."
+ },
+ "4854e8948881aba3": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Tax exemptions on bond interest make the fixed income instrument more attractive to investors."
+ },
+ "af8a341231f0f20c": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Choosing between index funds and active funds depends on personal investment strategy."
+ },
+ "d5329aed659b1a33": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "Samsung",
+  "rationale": "Software update news for consumer devices lacks direct stock market actionability."
+ },
+ "31cb9719f972e8a0": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Outbound M&A activities indicate aggressive growth and expansion in the IT sector."
+ },
+ "0987065b2cbc7e43": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Product pre-order announcements are consumer news rather than financial market signals."
+ },
+ "00f63d875657fc16": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Apple",
+  "rationale": "Upcoming product launch events historically drive positive retail interest in Apple shares."
+ },
+ "87e9e809cfb6e498": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Removing capital gains tax for foreign institutional investors could significantly boost market inflows."
+ },
+ "c61d16567fe01938": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Diplomatic visits and political itineraries do not generate direct financial market actions."
+ },
+ "d30a5c26d0f6adc7": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Philosophical and thematic market lessons offer general wisdom rather than specific trade signals."
+ },
+ "50cc405c203eb647": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "JCB",
+  "rationale": "Free trade agreement discussions provide macroeconomic context without immediate stock action."
+ },
+ "a16f5248cc6e75c9": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio",
+  "rationale": "A large-scale IPO can generate substantial interest and potential listing gains for shareholders."
+ },
+ "83567a98033bc261": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Municipal property subdivision services pertain to real estate administration rather than listed markets."
+ },
+ "7e5c83cc308244a4": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Overhauling tax refund schemes provides better liquidity and support for exporting companies."
+ },
+ "8f731abda40ca3ce": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Global macroeconomic growth trends offer broad context for long-term strategic positioning."
+ },
+ "0de1c49e89998434": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Government push into semiconductor manufacturing highlights strong growth prospects for the sector."
+ },
+ "cdc0b50e240279bc": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Regulatory disagreements between government health bodies lack direct corporate or market impact."
+ },
+ "5aa640992a70662b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "State visits by political leaders are diplomatic events devoid of direct stock market signals."
+ },
+ "b94c4a1771f33747": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political party formations are electoral news with no direct relevance to financial markets."
+ },
+ "08397e68e60ff9e7": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political rivalries and election campaigns fall strictly under general political news."
+ },
+ "205ef62b7a7ee3b7": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Fiscal lessons from global events provide macroeconomic insights rather than actionable trades."
+ },
+ "082bbf31817f6091": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Plunging sector stocks suggest caution and potential downside risks in AI-related equities."
+ },
+ "3d5349214d7a0103": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Legal liability discussions regarding AI technology are regulatory and policy-oriented."
+ },
+ "5b02555d1ca9f549": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Sports match reports and tournament rivalries are strictly entertainment."
+ },
+ "c47825a67a6f4652": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Football club operational and staffing decisions are sports business matters."
+ },
+ "5bbd5be6864764d3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Celebrity trivia and naming news have no connection to financial markets."
+ },
+ "0bcab7f5e93460a6": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Athletic achievements and goal counts belong exclusively in sports reporting."
+ },
+ "92918af5984934ca": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Generic corporate event headings require more context to be actionable."
+ },
+ "601a3114c2d306c6": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Broad market news headers serve as index placeholders for multiple updates."
+ },
+ "dedb95e227280635": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "eMudhra",
+  "rationale": "A severe 20% stock drop indicates heavy selling pressure and negative sentiment."
+ },
+ "85c201f44668da55": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Technical picks highlight specific assets flagged for potential bullish momentum."
+ },
+ "d1da80710fc97ea0": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Broadcasting network anchor listings provide channel guidance rather than direct trade ideas."
+ },
+ "c932bdab94a1990e": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Expert calls to review and lower capital gains tax are supportive of market inflows."
+ },
+ "e6c120ffcaf75fc2": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Bajaj Finance",
+  "rationale": "Featured stocks to watch often present active momentum or upcoming event catalysts."
+ },
+ "00c160563180b5f0": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Piramal Finance",
+  "rationale": "Appointing high-profile leadership can strengthen corporate governance and investor confidence."
+ },
+ "c2832aed75ba8b13": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio Platforms",
+  "rationale": "Major IPO openings provide prime opportunities for retail investors to seek listing gains."
+ },
+ "17ed33eb7d33f7f8": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "IT Services and Private Banks",
+  "rationale": "CIO recommends overweight position in IT services and private banks."
+ },
+ "bc4158fef55009ea": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "L&T",
+  "rationale": "Winning large orders indicates positive revenue growth."
+ },
+ "6ef29237e5620740": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Tatva Chintan",
+  "rationale": "Highest-ever quarterly turnover drove shares to a 52-week high."
+ },
+ "fcd5d36f65d118cb": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio Platforms",
+  "rationale": "Expected strong dividend distribution makes the IPO attractive."
+ },
+ "e5fbe0f576f1c94e": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio Platforms",
+  "rationale": "Rapid full subscription signals strong investor demand."
+ },
+ "8c19b6cad6f9fe32": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Transrail Lighting and Kalpataru Projects",
+  "rationale": "Significant order wins have caused shares to surge."
+ },
+ "3314da72e15e4257": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "INR",
+  "rationale": "Currency movement updates require observation rather than immediate action."
+ },
+ "31729060c939ddbb": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is about health and wellness, not the stock market."
+ },
+ "d8734556a9df21f4": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Cisco",
+  "rationale": "General market outlook from Cisco lacks an immediate trading signal."
+ },
+ "e1a5161bbd7a4b72": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "India Market",
+  "rationale": "Strong earnings growth drives a positive outlook for Indian equities."
+ },
+ "c322b823e08b4608": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "India Market",
+  "rationale": "Economic tipping point view suggests a bullish stance on the region."
+ },
+ "ae5da116e5335e0c": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Bajaj Finance, Swiggy",
+  "rationale": "Upcoming earnings reports require monitoring before making decisions."
+ },
+ "1843794687aefa3b": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "HDFC Bank, ICICI Bank, DLF, Axis Bank, PNB",
+  "rationale": "Stocks to watch implies monitoring rather than immediate buying or selling."
+ },
+ "49ba01dd70ec54c2": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Market triggers require observation ahead of the trading session."
+ },
+ "a42527c2ad508ba9": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Reliance Industries, Wipro, Jio Financial, Yes Bank, TechM",
+  "rationale": "Stocks to watch list requires monitoring."
+ },
+ "72ec388f0fd7b4c5": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "TCS, HCLTech, Tech Mahindra",
+  "rationale": "Analyst sees further upside in preferred IT stocks."
+ },
+ "609cfd6f3efc36dd": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Caution on AI capex suggests reducing exposure to related debt-heavy sectors."
+ },
+ "c7a8405332028956": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Trent, Rentomojo, STL",
+  "rationale": "Expert highlights growth potential in these stocks."
+ },
+ "a2766608b960e6f7": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Vodafone Idea, Metals, Honasa",
+  "rationale": "Analyst stays cautious on these sectors, suggesting avoiding them."
+ },
+ "7c69ae58430b86ab": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Identifying specific market opportunities suggests buying exposure."
+ },
+ "1d0b0cffbbad8172": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Caution on FMCG warrants reducing exposure, despite bets on banks."
+ },
+ "406b3d013fef484c": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Welspun Corp, PB Fintech",
+  "rationale": "Long-term story mixed with business model resets requires careful monitoring."
+ },
+ "6a447c3c11eb53e9": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "NSE",
+  "rationale": "Shareholder perspective on listing lacks a direct trade signal."
+ },
+ "94e394f45d8e6a1b": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "NSE",
+  "rationale": "Ceremonial listing event does not provide actionable trading direction."
+ },
+ "25fccdf8ffb202a4": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Aditya Infotech",
+  "rationale": "Picks include banks and railways while pricing out expensive options."
+ },
+ "738f29ede3b604b8": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Sensex",
+  "rationale": "Historical performance comparison is informational."
+ },
+ "78d760375bc50c5a": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Nifty",
+  "rationale": "Analysis of past market decline is for informational purposes."
+ },
+ "11ce04a5431592d0": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Nvidia",
+  "rationale": "Earnings takeaways require individual analysis before trading."
+ },
+ "41e9cfb14793370d": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Reliance",
+  "rationale": "Earnings highlights are informational for current investors."
+ },
+ "5e1b15087f0f4e2f": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "NSE",
+  "rationale": "Ownership structure details prior to an IPO require no immediate action."
+ },
+ "47bf337ddbcced31": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General news roundup requires no specific market action."
+ },
+ "414898a0917c33fa": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Bajaj Finance",
+  "rationale": "Short-term drop from margin warnings presents a buying opportunity with 33% upside."
+ },
+ "1fc08307c3387f2f": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "UltraTech",
+  "rationale": "Earnings call takeaways require analysis to determine buy or sell."
+ },
+ "5789a805cb8bf72c": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Piramal Finance",
+  "rationale": "Strong profit jump and stable asset quality make the stock attractive."
+ },
+ "65ad64597263b335": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Discussion on taxes and FII selling is analytical context."
+ },
+ "0982f3f3844a9d1b": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "LTTS",
+  "rationale": "Strong results causing massive surges point toward positive momentum."
+ },
+ "fe71cc3398a1d34b": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Nifty 50",
+  "rationale": "Live market updates require observation of intraday movements."
+ },
+ "91c1b9f05ed41f9b": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio Platforms",
+  "rationale": "Record subscription pace shows strong market enthusiasm."
+ },
+ "50743abdd558a412": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "L&T Tech, Bajaj Finance",
+  "rationale": "Live results updates require monitoring multiple stocks."
+ },
+ "a29c86b68767cc8e": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Analyst highlights IT stocks offering the best risk-reward profile."
+ },
+ "9d454a3aaab63b76": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "SBI",
+  "rationale": "A data loss incident poses a reputational and regulatory risk to the bank."
+ },
+ "b5577cf9ad7b703a": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Brent Crude",
+  "rationale": "Sustained high oil prices benefit energy sector equities."
+ },
+ "b24074ce86a329d1": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Japan Exports",
+  "rationale": "Solid export growth indicates strong demand for Japanese manufacturing and tech."
+ },
+ "936dfbacf82182db": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Tax exemptions on bonds are informational without immediate directional trading triggers."
+ },
+ "db26525ab2466bc3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Regulatory tax form notifications are routine administrative updates."
+ },
+ "4e6cb447c8aa65d6": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Geopolitical mediation status does not provide direct market action."
+ },
+ "6f33231c80a026ae": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Anthropic",
+  "rationale": "Rising losses for a private company are notable but lack public equity action."
+ },
+ "a4755e7cc2c78920": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Domestic security measures are political and social news."
+ },
+ "38d3f6a864310890": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Low bullish sentiment often acts as a contrarian indicator signaling a market bottom."
+ },
+ "3fa542e18127c1d2": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Crime investigation news has no impact on financial markets."
+ },
+ "01135d40c9bb9bc9": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Kospi",
+  "rationale": "Positive AI earnings boost broader Asian market sentiment."
+ },
+ "e5afbc0330bd53a4": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Military deployments are geopolitical updates rather than economic drivers."
+ },
+ "ef28b5f047616c77": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather forecasts are not stock market news."
+ },
+ "3ff6a0bc6e3eaa33": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Low risk appetite reflects current caution but offers no clear directional trade yet."
+ },
+ "009e12f99b4ace7e": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Tesla",
+  "rationale": "Strong SpaceX performance and potential merger exploration are bullish catalysts."
+ },
+ "9b6f05c02748c062": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Netflix",
+  "rationale": "Slower revenue growth warnings negatively impact near-term stock value."
+ },
+ "6a5f6dbb28cc5ff3": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "A prospective trade deal is generally positive for cross-border commerce."
+ },
+ "1a2ed7ba7b0e742b": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Apple",
+  "rationale": "Rapidly growing revenue in India signals strong regional expansion for Apple."
+ },
+ "7b64918b787dda2e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Diplomatic meetings are political news."
+ },
+ "4cae4a0823e984f4": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio Platforms",
+  "rationale": "Strong anchor investor demand points to robust institutional backing for the IPO."
+ },
+ "661bf64c1fc7ab0d": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Civil unrest management is political and social news."
+ },
+ "fe93b66da5be5ddd": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Electoral polling news is political."
+ },
+ "6b104c9c870fa81c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Military personnel activities are non-financial."
+ },
+ "a491539fff890b40": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Progress on a major trade deal supports favorable economic ties."
+ },
+ "d37963b04b44993e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Sports scores are not stock market updates."
+ },
+ "1b3094441f7104c7": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Media broadcasting links are not financial news."
+ },
+ "65c3549c52dfd460": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "8492eb949cc0dd6e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "7dad2ca1d7b79eac": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "a5bed859b0c5c1f3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "bc0c93e046d72176": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "eda71d00cb81483b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "b308484719a6da1f": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "271c3f1027c4717a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "7df58ca92bb51b41": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "cfd3a26173fe897c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "ab33fe1c45c4a64a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "505b13614166b616": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "ea4e551baa020836": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "da6ece7dbe7daedc": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are non-financial."
+ },
+ "54098db6499094d3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "caf7fec2141390d2": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "d268b5ffb910fab4": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "656ded3fe63733af": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "17908c1393d033f9": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "bbd4298074b905c6": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "a030c332a949c93c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "938cbc17606bd70e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "12b03b60cd19da21": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "b1899873690c2a30": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "6a7111e446cf4ea7": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "eb0f2d35991830c0": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "d3148721823f7aea": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "5a6f1893deaa2dcb": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "be7291ad97fab740": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "b0f6b18d31e199a6": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "b908ec2a13b48a36": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "6413ba55ea177737": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather updates are not relevant to financial markets."
+ },
+ "87145d93444c1b9e": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Geopolitical conflict impacts broad macro sentiment without a clear single-stock action."
+ },
+ "cf347c5d42326e95": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Box office news is entertainment-related rather than actionable stock market news."
+ },
+ "c43bec773d681680": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political legal cases are not directly stock market related."
+ },
+ "3cdeca1735ba441a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Educational exam registrations are not financial market news."
+ },
+ "611fc1fe3d8fcbef": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Health tips are not related to financial markets."
+ },
+ "98113434273e3dc7": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Sports commentary is not relevant to financial markets."
+ },
+ "408f2da37fd1d79f": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "State Bank of India",
+  "rationale": "A data breach is negative for the bank's reputation and security standing."
+ },
+ "454c4fb3a07a04ad": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Literary news is entertainment-related."
+ },
+ "15051ef82ba24760": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Agricultural export growth is positive for the domestic agribusiness sector."
+ },
+ "883806024e4fd70f": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Student study surveys are not financial market news."
+ },
+ "f660919a94fd0c26": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Tracking current gold prices is informative for commodity investors but provides no directional action."
+ },
+ "955554a8147d4cfd": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Local accidents are general news rather than stock market news."
+ },
+ "d3fe1b0295e0e49c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Movie box office earnings are part of the entertainment industry."
+ },
+ "f74c44436707d1d0": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Legal proceedings regarding family funds are general news."
+ },
+ "6a9ab0afa5ed3422": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Film advance bookings are entertainment-related."
+ },
+ "59ba2d11422b8959": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Individual insurance dispute cases are general legal news."
+ },
+ "63b30c8255a9258b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political vigilance probe pleas are not stock market news."
+ },
+ "cb1395f59ed73843": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Crime and international legal news are not financial market stories."
+ },
+ "d7243b71b7d7f6ff": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Celebrity disputes are entertainment news."
+ },
+ "3f00093cf39a4d80": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Sports achievements are not stock market news."
+ },
+ "a4129b63822cb5cb": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "UI interface text is not news."
+ },
+ "1df736f21000fca3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Publisher branding is not financial market news."
+ },
+ "7d83f92b17b14b78": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is a brand or publisher name with no financial market context."
+ },
+ "e1b3b5728c9ec624": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a publication name rather than a market news item."
+ },
+ "2bf1fc742ca47021": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This refers to a corporate entity name without market action."
+ },
+ "8139797e65199725": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a commemorative event or initiative, not financial news."
+ },
+ "5dcbc5e4ac2ab249": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This refers to journalism awards rather than investing or markets."
+ },
+ "4e43fb3753abfe5d": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a media initiative or fact-checking brand name."
+ },
+ "fba22404fea80590": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a commercial page link for advertising."
+ },
+ "777bfb9ee9c95363": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This relates to legal reporting guidelines rather than financial markets."
+ },
+ "1bd519ceb7652671": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a website compliance notice."
+ },
+ "eeb110a426246ff7": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio",
+  "rationale": "Strong subscription demand indicates high investor interest and positive momentum."
+ },
+ "140bb38506593614": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio",
+  "rationale": "High subscription status and GMP points toward a potentially profitable listing."
+ },
+ "bc83025f8df65efc": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Sensex",
+  "rationale": "A rising market driven by positive factors suggests favorable conditions for equity exposure."
+ },
+ "2202f4eff71c4fe2": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Sensex, Nifty",
+  "rationale": "A market rally led by IT stocks and IPO interest presents buying opportunities."
+ },
+ "9ff0cc1e5f9f3ac4": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio",
+  "rationale": "A strong grey market upside signals a favorable initial public offering investment."
+ },
+ "bcb1bb92a3590a6e": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Sensex, Nifty",
+  "rationale": "Pre-market speculation does not provide a definitive directional signal."
+ },
+ "63e4fe80b0380e73": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Tesla, SpaceX",
+  "rationale": "A potential high-profile merger could unlock significant shareholder value."
+ },
+ "032d7fe95aa77c33": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a cautionary warning against unverified tips rather than a direct stock signal."
+ },
+ "640d4b9f8a2a98c7": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Gold",
+  "rationale": "A dip in gold prices before a major festival may offer an attractive entry point."
+ },
+ "2cf182943d526e07": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Geopolitical trade discussions are ongoing and do not yet yield actionable trades."
+ },
+ "573d12f8370614b0": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Festive shopping trends point to strong consumer demand benefiting retail sectors."
+ },
+ "f250a81fe00b3dec": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "A new free trade agreement creates growth catalysts for export-oriented businesses."
+ },
+ "bd7c2f29223b2263": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio Platforms",
+  "rationale": "Positive broker outlooks highlight strong long-term growth runways."
+ },
+ "2ef62168d8c1cfa6": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a demographic and lifestyle story rather than financial market news."
+ },
+ "7f59dafaf8606bfb": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Projected doubling of bilateral trade signals growth for international commerce."
+ },
+ "553fa1a82df5123d": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Sensex, Nifty",
+  "rationale": "Market declines driven by sectoral dragging suggest short-term defensive positioning."
+ },
+ "1f6b7cd2874d52f3": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Regulatory bans on raw material sourcing negatively impact affected ethanol producers."
+ },
+ "d4e4e243c7e07fa8": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio Platforms",
+  "rationale": "Overwhelming institutional anchor demand reflects massive confidence in the IPO."
+ },
+ "d9feb52196640694": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Sensex",
+  "rationale": "A sharp market crash indicates prevailing downward pressure and risk."
+ },
+ "31a7c7c7552f5e91": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Progress toward a trade pact can benefit export-heavy market sectors."
+ },
+ "35794eaf0bff353b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a crime and prison security news report."
+ },
+ "96329e54a50782b3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a sociopolitical commentary and news debate."
+ },
+ "2ffaee0f94424121": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a judicial and criminal custody proceeding report."
+ },
+ "9aad629fe6e435a9": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a tragic local accident news story."
+ },
+ "3ef72fdc48a8e852": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio Platforms",
+  "rationale": "Rapid early subscription growth confirms high immediate demand for shares."
+ },
+ "6e8a4a82a939ea4c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is an entertainment and film review."
+ },
+ "def303dcc6acbfa6": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Optimistic commentary on a forthcoming trade deal supports positive economic sentiment."
+ },
+ "4688ed56bb999c5f": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "SBI",
+  "rationale": "A confirmed cyberattack and data leak pose operational and reputational risks to the bank."
+ },
+ "bc93e931666969f7": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a geopolitical security statement."
+ },
+ "47f2c7f14ecd619d": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a foreign criminal justice and human rights news item."
+ },
+ "7002c1f0b81f8448": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a cultural and sociological feature article."
+ },
+ "2328360f2fefc8c9": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is about sports and not financial markets."
+ },
+ "bb94fab0d7dbfdfe": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a political news story."
+ },
+ "bcdd4aec6a028511": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline relates to general news and opinion."
+ },
+ "7580f7cd9c62d4b1": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is promotional media content."
+ },
+ "7b80c59940eadac2": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Job cuts and corporate performance trends affect the broader labor market."
+ },
+ "1fe1894a46a06dc9": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline covers entertainment and celebrity news."
+ },
+ "2833e18ff20dbb9a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a local political dispute."
+ },
+ "2f36a1e8da81d853": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a word game or puzzle."
+ },
+ "289813071d48cd68": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This relates to entertainment and public figures."
+ },
+ "2c51bf100b7da498": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a crime and law enforcement story."
+ },
+ "973fc760df973990": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Bureaucratic exodus points to deep economic and political instability in Pakistan."
+ },
+ "75433eb68773ff13": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "eMudhra",
+  "rationale": "Security vulnerabilities in eMudhra could negatively impact investor confidence."
+ },
+ "d6369c68581e127b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is an accident and rescue news report."
+ },
+ "86c16bbbb1a3c2ff": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "SpaceX",
+  "rationale": "Geopolitical controversies involving Starlink create regulatory and brand uncertainty."
+ },
+ "432d5183f3fd96e3": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Talent trends impact the broader economy and corporate recruitment."
+ },
+ "04e2a4cbfd72799c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a violent crime report."
+ },
+ "97a163bf79b75e2e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a celebrity interest story."
+ },
+ "5cf04eb45f13f40e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a viral social media anecdote."
+ },
+ "fc68b3204dc03a61": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Severe pollution can impact regional economic activity and business hours."
+ },
+ "9f360ae30409d731": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is promotional media content."
+ },
+ "1de769107434a5ec": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is generic headline filler."
+ },
+ "59192bb4fe8de716": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a political analysis article."
+ },
+ "363545a3c2f5404e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a political commentary piece."
+ },
+ "a2f1698782298688": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Cybersecurity awareness is relevant to corporate fraud prevention."
+ },
+ "6bac806097c92424": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Aviation safety standards impact the operations of airline companies."
+ },
+ "abd5beb63f6ba7c0": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is an accident or disaster report."
+ },
+ "a721840945e5d910": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a game or puzzle prompt."
+ },
+ "708671aedcafea33": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a health and lifestyle video topic."
+ },
+ "e5357a1e35aaef70": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is an entertainment show episode title."
+ },
+ "b22c127ba0946ebb": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Infrastructure development and rural economy growth create localized investment opportunities."
+ },
+ "63cda6fc4c343af3": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Discussions on AI risks impact the broader technology sector sentiment."
+ },
+ "fc65fe1437cea0f6": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a political and governance commentary."
+ },
+ "f8a1a11c79bd48bc": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Advancements in robotic surgery highlight growth potential in medical technology sectors."
+ },
+ "c56fb8229a41c9ab": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a defense and geopolitical retrospective."
+ },
+ "2d00cd0ba720a0cb": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Energy market stability and trade security directly impact global commodity prices."
+ },
+ "9ef32939d6492877": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is an entertainment crime story."
+ },
+ "5f5559ac447ca2b8": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a crime report."
+ },
+ "5818376fe1d1442b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a political opinion piece."
+ },
+ "89930ff4b65d60a0": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Tariffs and visa policy statements affect international trade relations and cross-border businesses."
+ },
+ "eb2713bac68079cc": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a weather and civic disruption report."
+ },
+ "c4423118cf8e0c5d": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline discusses a hate crime investigation which is unrelated to financial markets."
+ },
+ "d4cf997d23e54c82": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "OpenAI",
+  "rationale": "Internal AI monitoring system issues do not present an immediate clear actionable trading signal."
+ },
+ "4eebad03a94d0297": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Urban development and riverfront projects are not stock market news."
+ },
+ "1e9dca97645f7d29": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Crime reporting involving actors is not financial news."
+ },
+ "5793ceabcaa35121": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio",
+  "rationale": "An initial public offering opening provides a buying opportunity for investors."
+ },
+ "36d797a4e05c8e48": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Ongoing criminal investigations are unrelated to the stock market."
+ },
+ "3778bd37669ccf11": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "GE Aerospace",
+  "rationale": "Executive attendance at a summit does not require immediate investment action."
+ },
+ "85a5fe4bd362d393": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Sensex",
+  "rationale": "A strong market jump and positive Asian shares suggest a buy environment."
+ },
+ "db3579beed87eb6b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Celebrity security threats are not stock market events."
+ },
+ "21e55dabfb6a7872": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Sahil Foods",
+  "rationale": "License suspension due to hygiene issues negatively impacts business prospects."
+ },
+ "85fd40cae57fdad9": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political statements on drug menaces are not financial market news."
+ },
+ "c971a0d82b962e4b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Diplomatic relations news without direct market policy changes is neutral."
+ },
+ "d1b655e5b7cae0f8": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Court dismissals regarding political compensation are not financial news."
+ },
+ "58daf251a155f316": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Tesla",
+  "rationale": "A potential merger involving high-profile tech and automotive companies could unlock value."
+ },
+ "b55d281b384d6f88": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political election scenarios are not corporate or market news."
+ },
+ "e079ac90774b2a75": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "New consumer credit options benefit financial institutions offering EMIs."
+ },
+ "bc08049266fb46b4": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "HD Fire Protect",
+  "rationale": "A strong debut with a 24 percent gain indicates positive momentum."
+ },
+ "ff6e8fb03c2889f8": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Bajaj Finance",
+  "rationale": "Disappointing asset quality and falling stock prices signal a sell or reduce stance."
+ },
+ "7463ce6edbf1cb29": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Jio Platforms",
+  "rationale": "High subscription rates indicate strong institutional and retail demand."
+ },
+ "99f46ae871e1b372": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Celebrity security updates are entertainment and crime news."
+ },
+ "0dc2b71b345e9044": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Movie tax exemptions are entertainment policy news rather than market data."
+ },
+ "35208ca527847c6f": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Personal finance guidance encourages investment vehicles like SIPs."
+ },
+ "eac797edcdcc870d": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General diplomatic statements about tariffs are broad geopolitical news."
+ },
+ "41d40913ee48bf4d": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Sobha",
+  "rationale": "Falling shares following poor quarterly results warrant a sell signal."
+ },
+ "4552e57bd889298b": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Wipro",
+  "rationale": "Rallies in IT stocks and analyst re-rating potential make this a buy."
+ },
+ "d3ca32b4cbb790b8": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "L&T Technology Services",
+  "rationale": "An analyst rating upgrade despite trimmed targets indicates positive fundamentals."
+ },
+ "efe452c0adc79249": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "L&T Technology Services",
+  "rationale": "A 10 percent jump after strong quarterly results suggests bullish momentum."
+ },
+ "6b4337763d000560": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Celebrity commentary on stage conduct is entertainment news."
+ },
+ "7127bc37411fd311": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "OpenAI",
+  "rationale": "Technical system updates for AI governance have unclear direct stock implications."
+ },
+ "d56a2e5266f6cb40": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Crime investigation details concerning celebrities are not financial news."
+ },
+ "b88cb938fa3cc02a": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Hindustan Zinc",
+  "rationale": "Strong quarterly results and a bullish analyst stance point to a buy."
+ },
+ "1e6454f73eadc3a3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Summit speaker lists are event announcements rather than market data."
+ },
+ "399fa9e546c9bd44": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Tata Steel",
+  "rationale": "An HSBC buy call citing unwarranted valuation discounts signals a clear buy."
+ },
+ "3c20158ee14a9aee": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General real estate buying advice is lifestyle guidance rather than listed stock news."
+ },
+ "bcf38c7cd8499bf3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Movie poster releases are entertainment news."
+ },
+ "540dd20432fa09f9": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Eicher Motors",
+  "rationale": "Forecast upgrades and higher target prices from Citi justify a buy signal."
+ },
+ "291d21b7fe0388d1": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Bilateral trade deal statements from political figures have an unconfirmed market impact."
+ },
+ "202eab034d74a818": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Criminal murder investigations taken over by the CBI are not financial news."
+ },
+ "820b7f7d12ac5e19": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General political protests in Europe are not specific stock market news."
+ },
+ "5c10906901ef5c73": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Election commission disputes are political news."
+ },
+ "e67cbeb340076992": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General editorial content without financial market relevance."
+ },
+ "d40793ffac05e92c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Legal and social policy news with no direct corporate exposure."
+ },
+ "baf32e7a625f7803": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political news article."
+ },
+ "d2c89dd9ed1a0ff9": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather and local news."
+ },
+ "7cae784884533f4a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Crime and police reporting."
+ },
+ "597e489587d5886a": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Niva Bupa",
+  "rationale": "A minor legal dispute is unlikely to materially impact overall valuation."
+ },
+ "e4edf8c1f57104a3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Social and legal commentary."
+ },
+ "5202be3b48a2e1bb": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Crime reporting."
+ },
+ "aeb57824d31ddcec": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Legal and citizenship news."
+ },
+ "9f101ba9fd6f850b": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Qualcomm",
+  "rationale": "Job cuts focused on performance often signal improved operational efficiency and cost control."
+ },
+ "1998af8b8306fdff": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Scientific research news."
+ },
+ "dbdcf8256e728353": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Cybersecurity advisories have broad impacts without immediate single-stock trade direction."
+ },
+ "fe5f6640536f3aa8": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General geopolitical and public discontent report."
+ },
+ "768c444a8a47e881": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political commentary."
+ },
+ "2907fe284b7a5d6d": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Environmental conservation news."
+ },
+ "b8d8f7de3909f66a": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Trade pact expansion generally supports cross-border economic growth."
+ },
+ "f1117711f0902948": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Policy discussion with long-term rather than immediate market impacts."
+ },
+ "9398f864226f598c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political governance commentary."
+ },
+ "6527f78cc9bbf155": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Local human interest story."
+ },
+ "0ce1b88d862862d2": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Free trade agreements generally boost bilateral trade and market sentiment."
+ },
+ "77981710e9615f5e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Crime investigation news."
+ },
+ "25f123f44f3056cc": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Historical and cultural trivia."
+ },
+ "ee70dce3256cbd9a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Student safety and social commentary."
+ },
+ "3b1491fe6b6bac26": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political campaigning news."
+ },
+ "8490e1743baddf67": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Educational commentary."
+ },
+ "862f8a3b05900a6d": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Local political opinion."
+ },
+ "e91c49916cf9ed3a": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Employment welfare measures have broad social impact rather than specific stock catalysts."
+ },
+ "0334e004ba77a470": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Local political defamation case."
+ },
+ "21be373e444eb3e8": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Legal service ruling."
+ },
+ "a349c38ab66ae27c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Cultural festival feature."
+ },
+ "2f5e77f6dc869775": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Cultural community event."
+ },
+ "6eda2649a5a8382e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Cultural and political art commentary."
+ },
+ "9dff3f8565d2a3fe": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Tourism and cultural reporting."
+ },
+ "e7d00da56ae934af": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Urban infrastructure podcast discussion."
+ },
+ "20383a1c8e970d20": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Geopolitical commentary."
+ },
+ "54dbb9c4db971198": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General civil unrest news."
+ },
+ "774d7e595922aaa4": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political commentary on foreign affairs."
+ },
+ "85a2ad59ed87335e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Civil unrest and international commentary."
+ },
+ "b5e62b2cf201a3a5": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Civil safety and municipal news."
+ },
+ "5b5608bf4a64bf53": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Economic demographics study without immediate stock market actionability."
+ },
+ "e18507d22c96595a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline discusses cricket sports statistics."
+ },
+ "d477567eed582b0a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline discusses political affairs."
+ },
+ "e52b66fe21a34a5c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline discusses political agitations."
+ },
+ "60015f607b901b8c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is about political party protests."
+ },
+ "95fd61d002fd7b4d": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline discusses a court case notice."
+ },
+ "41c6cf138060591b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline discusses provincial politics and referendums."
+ },
+ "479106eb0080f3bd": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is about local political elections."
+ },
+ "5796e763f36a3886": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Tesla",
+  "rationale": "This article explains engineering features of an electric vehicle."
+ },
+ "a309837995d0794b": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This article discusses broad technology strategy trends in Big Tech."
+ },
+ "6ec227304e9572fb": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is an entertainment movie review."
+ },
+ "75f37739f410c6c3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is about music and culture."
+ },
+ "2f724c4085d37dec": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is about cinema culture and traditions."
+ },
+ "ef93c4abd9e1ce43": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is about historical cultural figures."
+ },
+ "fed9b987f29c8891": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is an interview profile focusing on personal perspectives."
+ },
+ "382aefa707aecdea": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Refining superpower status highlights growth in India's oil refining sector."
+ },
+ "e167265251f0c38c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline covers athletic sports events."
+ },
+ "ccfae2e62afa7a24": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is about local food menus."
+ },
+ "b03f3efc4ff2b512": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is a city dining guide."
+ },
+ "059290fc22a6fbe4": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is an award profile for a chef."
+ },
+ "286e38cc9d627fa3": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "A lucrative boom in vegetarian dining indicates growth in the restaurant sector."
+ },
+ "330de3178916907e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a lifestyle and festive food article."
+ },
+ "cd9d64c42bab4a13": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a restaurant feature story."
+ },
+ "8b990d171d67f6d0": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Monsoon deficits can impact agricultural commodities and the broader economy."
+ },
+ "26d4eb623ac0f520": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline discusses traditional cultural festivals."
+ },
+ "ca81ecce557ccc85": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is a movie review."
+ },
+ "025982246d51e797": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline reports on football sports matches."
+ },
+ "61fd574664614712": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is about golf sports commentary."
+ },
+ "b610e4f6b297481a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is about cricket sports matches."
+ },
+ "f1c5fdf92712fb14": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a government regulatory food safety discussion."
+ },
+ "74886182095515fb": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline concerns public health department administration."
+ },
+ "fd70f8b28fe4da40": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a scientific space research update."
+ },
+ "86144082330bad63": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline discusses environmental weather phenomena."
+ },
+ "7076b6bd08d1b80a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is about a local cultural bookstore initiative."
+ },
+ "62820a4f4f7b8079": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a sociological interview on sustainability."
+ },
+ "14b57d63d3c6df3c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a book review on politics."
+ },
+ "9ffd7c991ceef8c1": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is an academic education article."
+ },
+ "75fcf5ca21132e4d": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a general urban history article."
+ },
+ "38a21888c2c2a481": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Policy approaches to food adulteration affect food processing companies."
+ },
+ "d294bc76cf2020a8": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance",
+  "rationale": "Evaluating Jio IPO options provides direct actionable investment guidance for Reliance."
+ },
+ "6140c3f8ba69c3c8": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "This is a direct promotional call to invest smarter using financial analytics."
+ },
+ "e44c1588360c9889": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Focuses on intelligent investing strategies for retail participants."
+ },
+ "4cc86c9d40af5f23": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General business educational content with no specific asset action."
+ },
+ "e693a5cc704c4665": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Highlights top performing stocks for potential entry."
+ },
+ "1116affb79ef8ea4": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Industry-level categorisation without a specific directional signal."
+ },
+ "5cd352b46d4a2cc9": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Encourages fixed-income exposure for diversified portfolios."
+ },
+ "e132d378e1da8b8f": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Directs attention to top-performing mutual funds for investment."
+ },
+ "c69e74b5c7c16014": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Trending technology terms without actionable investment advice."
+ },
+ "df2397230bbfb450": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Lifestyle and luxury content."
+ },
+ "566c10aa9cdbd7e9": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General world news overview."
+ },
+ "77b1048f91db4648": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Explores opportunities in digital real estate assets."
+ },
+ "443a53643338931e": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Highlights high-interest equities that may present momentum opportunities."
+ },
+ "d41d27c67db6644d": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General market search trends without a direct trading bias."
+ },
+ "46379570cd8e5ea9": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General aggregator headline without specific asset implications."
+ },
+ "3c05ff30e959f578": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Broad international corporate news overview."
+ },
+ "7f8057acf986c6ed": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Focuses on identifying risks to protect portfolios from potential losses."
+ },
+ "baca4cf74af4a1b7": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Indicates expanding utility and demand for crypto leverage platforms."
+ },
+ "46921092a98fe6f0": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Bitcoin",
+  "rationale": "Institutional inflows provide strong support for major crypto assets."
+ },
+ "4d02f937afc55dcf": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Bitcoin",
+  "rationale": "Improved ETF flows and positive sentiment support upward price action."
+ },
+ "81890d3914c630ad": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Bitcoin",
+  "rationale": "Macroeconomic easing expectations create a supportive environment for crypto."
+ },
+ "0039882823705cd9": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Bitcoin",
+  "rationale": "Active buyer participation points to continued market strength."
+ },
+ "ea731ffab42fdac2": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Robinhood",
+  "rationale": "Stock tokens drive retail trading engagement and platform activity."
+ },
+ "42921cbefd4bd6ec": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "CoinSwitch",
+  "rationale": "Strong financial growth and profitability highlight robust business health."
+ },
+ "b0deb27963272d86": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Bitcoin",
+  "rationale": "Massive historical outperformance validates long-term adoption."
+ },
+ "65b2fa25d307d889": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Bitcoin",
+  "rationale": "Strong rebound demonstrates resilient market demand."
+ },
+ "a17ac46fb60c061b": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Bitcoin",
+  "rationale": "Options expiry introduces volatility, requiring cautious observation."
+ },
+ "15615c88ca1fba8e": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Bitcoin",
+  "rationale": "Strong institutional inflows and buying momentum drive price higher."
+ },
+ "4029964bc238f217": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Binance",
+  "rationale": "Focus on real-world asset utility highlights fundamental crypto growth."
+ },
+ "302c8c83cfff8f70": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Bitcoin",
+  "rationale": "Assets show resilience by reclaiming key psychological levels despite headwinds."
+ },
+ "1a726a9bc45840b5": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Analyzes legislative impacts on market movements without a clear trading call."
+ },
+ "8d2fa662732bbec0": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Bitcoin",
+  "rationale": "ETF outflows indicate waning support and potential downside risk."
+ },
+ "218ed98227fc8136": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Bitcoin",
+  "rationale": "Profit-taking creates near-term selling pressure on the asset."
+ },
+ "a908e9dcea10f3e9": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Bitcoin",
+  "rationale": "Comparative asset analysis leaves the choice dependent on individual risk appetite."
+ },
+ "29473df0159f0d2c": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Bitcoin",
+  "rationale": "Massive liquidations and macro risks signal elevated market danger."
+ },
+ "ca013273d1eae824": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Increased transactional utility for crypto broadens adoption."
+ },
+ "f592ac398bd54d90": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Crime reporting regarding stolen funds."
+ },
+ "7daf83062913184a": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Adyen",
+  "rationale": "Long-term commitment to a high-growth market indicates positive company outlook."
+ },
+ "05351679920f4010": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "University educational program announcement."
+ },
+ "4ec8e8b6f05d3146": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Rasayan Labs",
+  "rationale": "New product and platform launch signals technological expansion."
+ },
+ "44a35ab199a6d515": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Industry-wide shift toward AI points to productivity gains and sector growth."
+ },
+ "5c30a83eb790642d": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Hardware business analysis without specific equity recommendations."
+ },
+ "0948c7d2ec95d08a": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Venture capital and private equity discussions provide general industry insight rather than actionable signals."
+ },
+ "06e206ed43b8a83a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline discusses general workplace technology trends without a specific investment action."
+ },
+ "7586647b89e1f11e": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General consumer advice regarding gold exchange offers no direct stock trading signal."
+ },
+ "bfc1bb86bc2412fd": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Cars24",
+  "rationale": "Strong GMV growth and profitability indicate positive operational momentum."
+ },
+ "a58245c48794f6a6": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Mahindra & Mahindra",
+  "rationale": "A retrospective look at brand building does not provide an immediate trading catalyst."
+ },
+ "4c8aefc04de339b6": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Growth in the professional haircare sector points to favorable prospects for beauty stocks."
+ },
+ "90f1633875d75c29": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Traffic laws and penalties are unrelated to financial markets."
+ },
+ "5aab9b94b8c6d25d": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Geopolitical engagements on defense and energy are diplomatic matters rather than stock signals."
+ },
+ "333b210fd38bc3d1": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General festive consumer shopping trends do not represent a specific listed equity action."
+ },
+ "7941e3ea477c0689": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Roadshows to attract airport investors signal incoming capital and growth in infrastructure."
+ },
+ "393ac9c9bdd6b127": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Congressional requests for criminal investigations are legal and political matters."
+ },
+ "ed8109caa908590b": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Flight disruptions negatively impact airline sector revenues and operational efficiency."
+ },
+ "1a8af92b09d2ca71": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Expanded flight schedules indicate higher operational activity for the airport and associated carriers."
+ },
+ "360e3442f5242db4": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Changes to immigration rules are administrative policies unrelated to stock markets."
+ },
+ "85b25a838e3c9bdb": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Jio",
+  "rationale": "A major market debut for Jio suggests strong initial investor interest and positive momentum."
+ },
+ "c981f714c76359c6": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Financial turmoil weakening the rupee signals currency depreciation risks for domestic assets."
+ },
+ "d1a9431bbf6f18a9": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General investment advisory during market uncertainty requires portfolio-specific context."
+ },
+ "5b02d4af793bc0ca": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "L&T",
+  "rationale": "A bullish market sentiment on L&T indicates positive expected performance."
+ },
+ "1ea1722a4b97a01d": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Positive earnings beats and rising benchmark indices reflect bullish market conditions."
+ },
+ "2d5ed6f97a74ff7a": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Jio",
+  "rationale": "Strategic investments in high-growth areas like AI and cloud point to long-term value creation."
+ },
+ "4f4c4b0f17e09614": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "L&T Technology Services",
+  "rationale": "An 11% share price rally following strong quarterly results indicates robust financial health."
+ },
+ "7ddf77cbf047fac6": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Rising benchmark indices reflect broad market strength and positive investor sentiment."
+ },
+ "b4636cc7de49e204": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Diplomatic meetings between political envoys are international news events."
+ },
+ "d74cf7ee79e41464": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political controversies are non-financial events."
+ },
+ "8a773e10f372a2a4": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Dr. Reddy's Laboratories",
+  "rationale": "Regulatory approval for a cancer drug expands the company's product portfolio and revenue potential."
+ },
+ "6814ea8ed07b4441": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Demands for dividend payouts imposed on data center companies could pressure their capital expenditure."
+ },
+ "96bb20f826432f3c": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Analyst upgrade ideas with significant re-rating potential suggest buying opportunities in IT."
+ },
+ "3b6e741f62fd2e03": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Reliance Jio",
+  "rationale": "Expert commentary on an upcoming IPO provides insights without an immediate trade instruction."
+ },
+ "d5ab06c5d1eb46c4": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Targeted bilateral trade expansion goals indicate favorable macro conditions for cross-border trade."
+ },
+ "6eda9a28744ce050": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "International climate summit trade policy negotiations have mixed sector impacts."
+ },
+ "5125cb499a0457c7": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Differing political speeches on the economy represent commentary rather than market-moving data."
+ },
+ "50b7da1b77605ff0": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Industries",
+  "rationale": "US interest in securing energy deals with Reliance indicates strong commercial demand."
+ },
+ "101bb1ff544ad269": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Space exploration milestones by nations are scientific and national achievements."
+ },
+ "9b06ac2462ff09ea": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Diplomatic inquiries regarding legal executions are political affairs."
+ },
+ "84fd1d0afcc42616": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Indian Railways",
+  "rationale": "Infrastructure expansion to a remote town is a public service milestone with negligible direct impact on listed stock values."
+ },
+ "38b5ad111e1e1b61": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Law enforcement actions against tenants are legal matters."
+ },
+ "be5c4c3f13f24ca7": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "State Bank of India",
+  "rationale": "A data security breach and customer record exposure represent operational risks for the bank."
+ },
+ "5f9153e53dc00d1b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Personal finance calculation rules for employee benefits are general information."
+ },
+ "6b7ec48d65124007": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Bank holiday schedules are operational details for consumers rather than investment signals."
+ },
+ "1ade54040680e437": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Tesla",
+  "rationale": "Exploring a potential merger between high-profile tech and automotive giants creates major speculative value."
+ },
+ "4f4c6aeba82b18ca": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a political news headline unrelated to financial markets."
+ },
+ "b0c21064193f1184": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Large-cap Index",
+  "rationale": "Valuation concerns in mid-caps suggest shifting fresh capital to large caps."
+ },
+ "1f4fe43b4edfdf4f": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Tesla",
+  "rationale": "Speculative merger discussion provides no immediate actionable signal."
+ },
+ "0d28e3ed475e9a36": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline concerns a legal family dispute."
+ },
+ "cef9efd0ab5f7750": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a political news event."
+ },
+ "ca987db19f353bf8": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline concerns weather and natural disasters."
+ },
+ "dc8438c74c0d5506": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "General personal finance advice encourages investing in a financial safety net."
+ },
+ "0fcd75b1dff34f5a": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Copper",
+  "rationale": "A potential supply crunch could drive commodity prices higher."
+ },
+ "a389776d56d87391": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a political news event."
+ },
+ "67e4fa0562492cb9": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "A prospective trade deal between India and US is positive for international trade."
+ },
+ "eab4201921bfba71": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a social and political protest news item."
+ },
+ "292dd3727f058582": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General tech infrastructure trend without a specific actionable target."
+ },
+ "65d6c0a0110fdc48": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Simplismart",
+  "rationale": "Fundraising talks indicate growth potential for the startup."
+ },
+ "bfc1036c819e5402": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Wipro GE HealthCare",
+  "rationale": "Expansion plans signal strong operational growth."
+ },
+ "3bcc9826d8d571fa": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Macroeconomic overview of France provides context without a direct trading signal."
+ },
+ "114d2489f6cf06bf": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a crime and legal investigation report."
+ },
+ "ec46c189573f9f13": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a weather alert report."
+ },
+ "0855d1d6bf0c3cb6": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a geopolitical and defense-related news item."
+ },
+ "82152b488516d466": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a political commentary piece."
+ },
+ "87506c7b11b0ec67": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a geopolitical security news item."
+ },
+ "1b228dc677e48273": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a local food safety news report."
+ },
+ "d34195fdcfb104e0": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "High-level energy and trade discussions are favorable for the energy sector."
+ },
+ "4697428b4404c62f": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is an entertainment and box office report."
+ },
+ "365778ce8981b133": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Strong festive travel demand is positive for the aviation and travel sector."
+ },
+ "9601ff7ac34fcd44": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is an opinion piece on philanthropy."
+ },
+ "c13a7fef5d91482a": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Banking Sector",
+  "rationale": "Analysts highlight upside potential in banking stocks."
+ },
+ "2c2c25680ccd25bd": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Fertiliser Sector",
+  "rationale": "Selected fertiliser stocks show upside potential despite headwinds."
+ },
+ "320fe4443e4ae579": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Large-caps",
+  "rationale": "Strong buy recommendations on large-caps indicate attractive upside potential."
+ },
+ "f324f3f5cc0ccb62": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Global bond yields and market fate are analytical themes requiring monitoring."
+ },
+ "15fc6104efd63976": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "War effects on critical sectors require caution rather than immediate action."
+ },
+ "71f9c7d2232f4323": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a philosophical article about artificial intelligence and science."
+ },
+ "878c7454981585c4": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "The shift toward equity shares suggests long-term investment favorability."
+ },
+ "0b6f16906ede4f38": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Risks associated with ESOP structures suggest caution regarding minority shareholder value."
+ },
+ "06b4259cced55376": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "The comeback of physical retail is positive for retail businesses."
+ },
+ "4890eeec0c313bbf": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Human hospitality as an advantage is positive for service sector businesses."
+ },
+ "b143964dd6a29537": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Simplismart",
+  "rationale": "Fundraising talks and tripling valuation indicate strong startup growth."
+ },
+ "06f66122e6a87301": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Energy market maneuvers signal potential growth in the energy sector."
+ },
+ "b0b5aaab826e5f4b": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Macro energy competition requires observing industrial tool developments."
+ },
+ "8f6afdb7f2e5a78f": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is an environmental policy report."
+ },
+ "9743a8d495b14c9f": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "An imminent India-US trade deal is a positive catalyst for market exposure."
+ },
+ "98c2336634155d29": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Protests are social events without direct financial market impact."
+ },
+ "301385784cd37be5": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Low coal reserves pose a risk to energy-dependent industrial sectors."
+ },
+ "ea9b2fa79fc1a940": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "SpaceX",
+  "rationale": "Geopolitical service cuts involve private defense contracting risks."
+ },
+ "339df1f6451b487a": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Regulatory scrutiny on local food sellers has negligible broader impact."
+ },
+ "2d8fb423edb51bd9": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Administrative delays negatively impact media sector operations."
+ },
+ "84285c0179b3afd3": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Microsoft",
+  "rationale": "Future hardware pipelines indicate upcoming consumer hardware revenue."
+ },
+ "8816be5f2854c1ab": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Public safety measures do not affect financial markets."
+ },
+ "342208802d153004": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "BBC",
+  "rationale": "Major restructuring and job cuts indicate financial streamlining."
+ },
+ "3cbab0b6d99ec962": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Alphabet",
+  "rationale": "Cloud outages pose operational risks and client dissatisfaction."
+ },
+ "2797b0f4b3ce72c4": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Macroeconomic budget constraints affect sovereign debt profiles."
+ },
+ "84bfff1cdc116690": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Personal health stories are not related to financial markets."
+ },
+ "97f7c3198372b966": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Qualcomm",
+  "rationale": "Global workforce reductions suggest cost pressures or strategic shifts."
+ },
+ "2e188effebd4efb9": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Policy reviews introduce regulatory uncertainty for mining firms."
+ },
+ "2b614d74cc1d728a": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Climate events have broad systemic effects on commodities and agriculture."
+ },
+ "25b3842d317ed7cc": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Tourism news from sanctioned regions lacks investable market exposure."
+ },
+ "453b0c18b722cdd5": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Celebrity legal cases have no relevance to stock performance."
+ },
+ "a3b9ea8228606b8c": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Volkswagen",
+  "rationale": "Partnership friction threatens strategic electric vehicle expansion."
+ },
+ "1fac6fef1277f56e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Scientific space missions are exploratory rather than commercial."
+ },
+ "c57ae24d0dbdaf3c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Judicial infrastructural inaugurations do not impact the stock market."
+ },
+ "7388ce998bcfd475": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "OpenAI",
+  "rationale": "Pre-IPO funding rounds signal massive valuation and growth potential."
+ },
+ "7e4e84852ba13979": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Maruti Suzuki India",
+  "rationale": "Company name mention implies sector tracking."
+ },
+ "4e4295d05e5a7034": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General financial sector categorization."
+ },
+ "d8029fa2c188ed0e": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Industrial goods sector classification."
+ },
+ "9b0347371737d0da": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Kalpataru Projects International",
+  "rationale": "Securing large domestic work orders boosts revenue visibility."
+ },
+ "9afe1395339700e8": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Entertainment streaming recommendations are not stock market news."
+ },
+ "e8168de261640782": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Travel guides have no bearing on listed equities."
+ },
+ "f0daef7540e91dda": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Celebrity biography profiles are non-financial."
+ },
+ "98ae46d200c0b941": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Travel recommendations are lifestyle-oriented."
+ },
+ "dd8a15660b94067c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Streaming weekend watchlists are entertainment updates."
+ },
+ "43ddbbb537822f7a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Movie franchise comparison is purely cinematic."
+ },
+ "8b88a2a94a2013e4": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Motivational advice is lifestyle content."
+ },
+ "968a47f74188d4be": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Fitness articles do not relate to equity markets."
+ },
+ "6544def98b0eb7b4": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Film review features are entertainment news."
+ },
+ "048938add8a3c6e3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "OTT release guides are consumer entertainment stories."
+ },
+ "6d7ee5288c15faba": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Actor biography lacks corporate or market significance."
+ },
+ "ae34be2791ae0822": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Psychology quizzes are generic lifestyle content."
+ },
+ "505160f22718b35d": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Reality television contestant lists are entertainment news."
+ },
+ "504eb3d97c9a522b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Baby naming guides are lifestyle content."
+ },
+ "61cb570f77920c5b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Baby naming lists have no economic impact."
+ },
+ "17b510a1fedfb8b5": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Naming guides are strictly for lifestyle readers."
+ },
+ "9fafcf61e72bc6bb": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline concerns lifestyle and baby names, not financial markets."
+ },
+ "e119032e7cbdd09b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is about baby names and has no relation to investing."
+ },
+ "d8181c74bb65c0bc": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Bilateral trade growth targets indicate positive economic expansion for both nations."
+ },
+ "f0cf45c2f2d6a1a2": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Strong positioning of India's refining sector signals positive sectoral momentum."
+ },
+ "01e891e9b0d91498": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Industries",
+  "rationale": "Growth initiatives in technology and AI suggest a positive outlook for the company."
+ },
+ "352fa6b31c430353": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Industries",
+  "rationale": "An impending IPO and rapid user growth indicate strong value creation."
+ },
+ "611c040649189476": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "SKF",
+  "rationale": "Focus on the future of frictionless technology highlights ongoing industrial innovation."
+ },
+ "515cdbeaa57691d1": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "High IPO fundraising activity shows resilient capital markets despite corrections."
+ },
+ "3f595765a281a77b": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Reliance Industries",
+  "rationale": "Historical background on Jio's founding provides no immediate actionable trading signal."
+ },
+ "faffe151c521b007": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "An overview of past IPO listings is informative rather than actionable."
+ },
+ "2dcaf244dc40fd67": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Industries",
+  "rationale": "Strategic AI alliances with tech giants enhance long-term growth prospects."
+ },
+ "7382f28143e56bab": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Industries",
+  "rationale": "A major upcoming IPO represents significant investment potential."
+ },
+ "3cb3858fda36b2ef": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Industries",
+  "rationale": "Allocation strategies for existing shareholders offer favorable participation opportunities."
+ },
+ "aeef3a7b3e8ca5cf": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Reliance Industries",
+  "rationale": "Structural details of a market debut do not inherently dictate a buy or sell."
+ },
+ "07c8330b4184cc90": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Inclusive economic growth initiatives provide a positive backdrop for small enterprises."
+ },
+ "d607e6b29021b883": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General adoption of AI in public services lacks direct corporate investment triggers."
+ },
+ "461790bb118b0598": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Workplace redesign strategies for AI are broad operational insights."
+ },
+ "ad9ab05a82abf2d6": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Personal finance advice on household portfolios offers no specific stock recommendations."
+ },
+ "878070bc5937a9fc": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General wealth management advice is educational rather than actionable."
+ },
+ "73a1cab5d234f8e4": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Fractional real estate opens new avenues for retail wealth building."
+ },
+ "835a8a1eeaeb5cec": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline focuses on medical treatment and joint pain."
+ },
+ "668be24e3b305da3": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Startup innovation in AI indicates a robust technology sector."
+ },
+ "26b5fc5c2c08dd2b": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Amazon",
+  "rationale": "Focus on premiumisation and AI during a major festival points to strong retail performance."
+ },
+ "f7c63c7e8943b3d8": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Broad commentary on the future of payments lacks specific company catalysts."
+ },
+ "33ab36042583e1e0": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Personal budgeting guidance for car purchases is consumer advice."
+ },
+ "a8346f6c2a088442": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "UltraTech Cement",
+  "rationale": "Analyst picks with identified upsides present clear buying opportunities despite cost pressures."
+ },
+ "46fdf31eca549b5b": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Government employee bonus rules are personal finance and employment updates."
+ },
+ "7e7bb87b93c98565": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Regulatory compliance deadlines for provident funds are administrative updates."
+ },
+ "b0e5f82575abaf4a": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Inheritance real estate guidance is personal financial management."
+ },
+ "36a100387b0fa227": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Emergency fund allocation is general personal finance education."
+ },
+ "233cf5b196b7ccdb": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Entertainment listings for streaming platforms are not stock market news."
+ },
+ "eef6954e6da85a8d": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Government dearness allowance updates concern public sector compensation."
+ },
+ "70a2bab4273d39d2": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Parental financial planning advice is targeted at individual consumers."
+ },
+ "b8b870fcec5978a4": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "Thermax",
+  "rationale": "Analyst recommendations highlight specific buy targets alongside a clear sell rating for Thermax."
+ },
+ "aff156f34f7ae440": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Global passport rankings are travel and geopolitical news."
+ },
+ "a0cdcda89108b46a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Travel destination highlights are tourism-related rather than financial."
+ },
+ "0582e56ee9aa89b7": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Commodity price tracking allows investors to gauge precious metal valuations."
+ },
+ "9a8aff1c878f9d91": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Car insurance policy coverage details are consumer information."
+ },
+ "e49f7cf6529e5c33": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Significant capital inflow into Indian real estate indicates strong sectoral health."
+ },
+ "accc67968b9e6912": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "State Bank of India",
+  "rationale": "New consumer credit offerings can drive customer acquisition and transaction volumes."
+ },
+ "f892fc2477e37244": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline covers travel and tourism, which is not stock market news."
+ },
+ "f41f7c7e351e6f1f": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This discusses personal income tax rules rather than listed corporate performance."
+ },
+ "0d18aad7aa519ec9": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Personal finance and debt consequences are not specific stock market updates."
+ },
+ "370ec80fad56fece": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General real estate buying advice for individuals does not affect public equity trading."
+ },
+ "e11c5f62da07cac7": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Savills",
+  "rationale": "A surge in branded housing projects indicates growth in the real estate sector."
+ },
+ "58415647002d3f85": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Signature Global",
+  "rationale": "New project partnerships with high sales value reflect positive revenue growth."
+ },
+ "049c8f937f6bf9a2": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Prestige Estates",
+  "rationale": "An increase in sales bookings signifies strong operational performance."
+ },
+ "fb2c2850e6cfa98d": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Puravankara",
+  "rationale": "A massive surge in Q2 sales bookings indicates high market demand and revenue."
+ },
+ "4264886d83370fa9": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Savills",
+  "rationale": "Record leasing numbers show strength in industrial and warehousing real estate."
+ },
+ "2a5ebd8ee57a21b7": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "BPTP",
+  "rationale": "Successful apartment sales indicate solid demand for the developer's housing projects."
+ },
+ "97c6a015dcc3b81e": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Higher mortgage rates could negatively impact overall housing sales and sector stocks."
+ },
+ "21a5d1a62a6911ef": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Resilient real estate demand balances out the potential negative effect of repo rate hikes."
+ },
+ "63c61814de73c42c": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Landmark Group",
+  "rationale": "Securing significant project finance supports ongoing development and expansion."
+ },
+ "b11a91c7ad04f02f": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Anarock",
+  "rationale": "Increased private equity inflows into office assets signal positive institutional confidence."
+ },
+ "f849f7f93e67dc5b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Geopolitical trade talks and diplomacy are political news rather than direct stock events."
+ },
+ "b2940c17a49402d1": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a sports news update regarding a cricket match."
+ },
+ "9f858797595d0caa": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Cricket commentary is unrelated to financial markets."
+ },
+ "70897afbb65276b3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Air quality and pollution reports are environmental and civic news."
+ },
+ "98afb59bf4d13ce2": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Local lifestyle and heritage articles are not stock market news."
+ },
+ "3f4afeafcabfd940": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "International relations and UN statements belong to politics."
+ },
+ "016041998bcc9202": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Crime and legal cases involving individuals are not financial news."
+ },
+ "dee865ebad5b3141": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Crude oil types and Venezuela oil policy have mixed macro impacts on energy markets."
+ },
+ "2d7b1f8056e91f80": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Celebrity comments and entertainment news are not actionable stock data."
+ },
+ "1fced9a252438721": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Corporate commentary on social media about lifestyle is not material financial news."
+ },
+ "f27a2156d7b4d75f": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General vision statements on agriculture technology lack specific company actions."
+ },
+ "eaff792eb9ebffec": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Civic protests and social unrest are political news."
+ },
+ "4dab2b4e0878abb9": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Public health policy is social news rather than corporate earnings news."
+ },
+ "7e55609dc0ac5d8b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Organizational disputes within associations are not listed company news."
+ },
+ "3c47fbfb937ef566": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "FedEx",
+  "rationale": "A cargo theft incident is a crime story rather than an indicator of corporate health."
+ },
+ "da4f50d70fdf27e4": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Electoral politics and campaign statements are political news."
+ },
+ "7aa859bc1b896771": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Labor practices and workplace culture issues in private therapy chains are legal or social news."
+ },
+ "6e40eab437a96bd0": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Toyota",
+  "rationale": "High consumer demand making a product hard to find is a positive indicator for the manufacturer."
+ },
+ "220ce92499dbcff2": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Geopolitical aerospace dependency is a defense and policy issue."
+ },
+ "fb136e9e4593b4fa": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "The growth of AI personal assistants points to an expanding digital economy and tech sector."
+ },
+ "04aa9f5790c64d60": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "University funding and education policy are not stock market events."
+ },
+ "e188a8c7e474c140": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Opinion pieces on political figures are not financial market signals."
+ },
+ "1ffb0f62c40cfe4d": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Cricket tournament scheduling is sports news."
+ },
+ "1e97fa41aecff181": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Sports competitor analysis has no relevance to investing."
+ },
+ "ace1627cec71c171": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Player selection for a sports team is purely athletic news."
+ },
+ "39e2359ad3c3d4ff": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Cricket tour previews are sports news."
+ },
+ "54a000863ea4a9a6": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline is about electoral roll management and is not related to the financial markets."
+ },
+ "3ef88ac2587d6827": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline covers a legal tangle regarding detentions, which is unrelated to investing."
+ },
+ "39f1aed71fc2ea87": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Concert cancellations by artists are entertainment news and not stock market data."
+ },
+ "86eef78b99c7b1c0": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Television show updates belong to the entertainment category."
+ },
+ "75a0ce33a925d32f": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Festival and cultural celebrations are not financial or corporate news."
+ },
+ "2056f84b89cd9aa6": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Viral video stories about protests are general news, not stock market news."
+ },
+ "3d5d3757ddd57eb4": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Cultural community events are not financial market occurrences."
+ },
+ "25d0fbaae51cb157": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Government database queries by private firms relate to data access policy rather than direct trading signals."
+ },
+ "c1abf2ca0c726ff3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Consular camps and community events are political or social news, not financial market news."
+ },
+ "4ca9ba94644802e9": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Industries",
+  "rationale": "High-level visits to oil refineries impact energy sector stocks positively."
+ },
+ "ce518be1fd8629fb": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Tarot horoscopes are lifestyle content."
+ },
+ "cc3a95e03008a06c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General horoscopes do not constitute actionable corporate stock analysis."
+ },
+ "c2e93ed7abd43374": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Love horoscopes fall under lifestyle and entertainment."
+ },
+ "268e6dc5658ed873": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Celebrity costume news is entertainment gossip."
+ },
+ "e6eb682fdc88c0ea": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Pregnancy advice is lifestyle content, not financial news."
+ },
+ "ac80a9277d5675d9": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Macroeconomic trends on unemployment reflect broader economic health but offer no direct single-stock buy or sell trigger."
+ },
+ "fb915d9f2823f30a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Crime branch investigations are legal and crime news."
+ },
+ "823360eb1207a2c3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Violent crime reports are not stock market news."
+ },
+ "44021dc0af2321a3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Police arrests for extortion are crime stories."
+ },
+ "186a1d25c7283689": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Student union strikes are academic and general news."
+ },
+ "f7042168a0fa4752": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Movie event updates are entertainment news."
+ },
+ "d94a4c3de33ac206": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Fashion show coverage belongs to the entertainment and lifestyle sector."
+ },
+ "1f121e366f9ed14e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Red carpet fashion events are entertainment news."
+ },
+ "ada34096b3f763f4": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Cricket match summaries are sports news."
+ },
+ "dc314182132f761c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Cricket match reports are sports news."
+ },
+ "97a323b08f4a9e96": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Protest site policy updates are civic and political news."
+ },
+ "96764e04f8c87b16": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Cricket game highlights are sports news."
+ },
+ "c248fd16d681cd03": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Traffic updates caused by political rallies are general news."
+ },
+ "771fcc8e8efbcf6e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Biographical articles on actors are entertainment news."
+ },
+ "ed234100f463445f": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "LVMH",
+  "rationale": "High-profile fashion shows reflect strong brand engagement for luxury houses like Louis Vuitton."
+ },
+ "7f09ed7d2a6a589b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Vendor payment disputes involving educational boards are administrative news."
+ },
+ "042e3ad35cf3c328": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "University disciplinary response news is educational and social reporting."
+ },
+ "ab9bc49e8ee19917": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Supreme Court legal proceedings on school admissions are legal and social news."
+ },
+ "4c83f4dbe4751547": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Geopolitical military tensions impact macroeconomic sentiment generally rather than giving a specific trade signal."
+ },
+ "ae80263c23b5e425": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political approval ratings are purely political news."
+ },
+ "064bb10d634ceb55": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "International diplomatic relations affect broad geopolitical risk but lack a direct company trading direction."
+ },
+ "b57e4a6be797925f": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Statements on foreign elections by political figures are political news."
+ },
+ "76ee37ff81b1f8e5": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Bilateral trade deals moving close to completion act as a positive signal for macroeconomic growth and international trade."
+ },
+ "14004f2c10e2faca": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "BSE Sensex / Nifty 50",
+  "rationale": "General market updates show intraday fluctuations without a distinct directional recommendation."
+ },
+ "dfa855a4cf09e15b": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Jio",
+  "rationale": "Rapid full subscription of a major IPO indicates strong investor demand and positive market sentiment."
+ },
+ "3873066c2b82436e": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Larsen & Toubro",
+  "rationale": "New large order wins indicate strong revenue growth and project execution."
+ },
+ "141d1fd48226d6b6": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Industries",
+  "rationale": "High-level meetings concerning energy and oil partnerships signal potential positive developments for the conglomerate."
+ },
+ "7bc66a4d58982a9f": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "MRF",
+  "rationale": "Broad market sell-offs and stocks hitting 52-week lows suggest a bearish trend."
+ },
+ "d62707b262a96537": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline discusses municipal pollution regulations rather than corporate financial performance."
+ },
+ "d263521016facc51": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "A bearish outlook on the equity bull market advises shifting capital into safer assets."
+ },
+ "f3dfaedf3d857db6": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a sports news story about a football coach and a match."
+ },
+ "89351b0cb3179999": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "State Bank of India",
+  "rationale": "A data leak investigation introduces operational risk and potential reputational damage."
+ },
+ "2bd8808d16c71063": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This headline covers an international cricket match result."
+ },
+ "ec174755fabf6157": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a sports news update regarding a Test cricket match."
+ },
+ "9401c9df0f070df5": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Increased pricing power for goods producers points to improving profit margins."
+ },
+ "e4bde3d989575c85": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is an entertainment industry security incident, not a financial market event."
+ },
+ "9232c4c40b0be8cd": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a political statement rather than an economic or market event."
+ },
+ "03a20bc49486e3ac": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Broad political and economic instability in France creates negative sentiment for European markets."
+ },
+ "3ef540f33ad27bdb": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a political remark with no direct corporate or financial action."
+ },
+ "b386987d5f4e015f": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a domestic political controversy unrelated to financial markets."
+ },
+ "78225f36c5609a57": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a crime and entertainment reporting story."
+ },
+ "e12b1560626799e2": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Geopolitical tensions in West Asia create broader macro uncertainty without a single stock direction."
+ },
+ "62465850d8d09d37": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a local political grievance and non-market news."
+ },
+ "c60b659e93f3d088": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a film review and entertainment news item."
+ },
+ "ffd008979d2afa2e": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Discussions on an impending India-US trade deal can boost bilateral trade expectations and sector performance."
+ },
+ "ed3a4f9adfc53814": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a police and criminal procedure report."
+ },
+ "6b16c64e65d26a5c": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a domestic political news report."
+ },
+ "df53740feaecd356": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a political incident involving administrative travel delays."
+ },
+ "5841eb53ea44db16": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "SpaceX",
+  "rationale": "Corporate operational decisions regarding satellite services do not have immediate broad market implications."
+ },
+ "4ab16e2f7dde9b47": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "",
+  "rationale": "Progress toward an India-US trade deal generally supports international trade and export-driven sectors."
+ },
+ "b667c5d0722d2f52": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "This is a legal and judicial proceeding update unrelated to listed securities."
+ },
+ "e1bec172059aa3f9": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "",
+  "rationale": "Global conflicts impacting supply chains and world hunger present negative macroeconomic risks."
+ },
+ "d6b36a5fb0422fff": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General regulatory news regarding small businesses without direct stock impact."
+ },
+ "a2e88f5dc49694f5": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Port corporatization is a structural economic policy shift with broad sector impacts."
+ },
+ "b51610b48ea7e81b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Personal tax filing administrative procedure."
+ },
+ "43a7feadd4d625b2": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Industries",
+  "rationale": "Strong initial public offering benchmarks signal robust investor demand."
+ },
+ "baed0dddf032ca20": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Industries",
+  "rationale": "High institutional subscription rates indicate strong market confidence."
+ },
+ "6f26f1f2d8b7c3ab": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Government welfare payment status check."
+ },
+ "5748588f11d0fe85": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Personal finance advice regarding savings and investments."
+ },
+ "57ec6d3297a259ef": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political news and diplomatic comments."
+ },
+ "a7e6c41af48c1280": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Employment advertisement for a government space organization."
+ },
+ "3d3f3c9b5680a54b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Geopolitical and diplomatic relations news."
+ },
+ "cdb2e765eebd576b": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Weather and climate phenomena reporting."
+ },
+ "6b6e3c9d9691317b": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Macroeconomic trade and visa policy statements affect broad market sentiment."
+ },
+ "bec87cd31a01aea1": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Tragic personal event and workplace dispute commentary."
+ },
+ "25c13f575ee99d71": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "General labor market and demographic trend discussion."
+ },
+ "03ac582d402ef1b5": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Lifestyle or literary content."
+ },
+ "856665fb422a30a0": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Bilateral trade agreement impacts macroeconomic migration and labor."
+ },
+ "d934058c437975ea": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Environmental pollution report."
+ },
+ "92175a3d9ab7ee0e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Global climate policy commentary."
+ },
+ "07ed94f9c6a19208": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Air quality index report."
+ },
+ "fc81572e50483166": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "Tata Group",
+  "rationale": "Large capital requirement by a corporate ally requires monitoring."
+ },
+ "9bccd95951e2ce99": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Lifestyle and health beauty trend report."
+ },
+ "9ec1a20996c4c173": {
+  "is_stock_market": true,
+  "signal": "buy",
+  "company": "Reliance Industries",
+  "rationale": "High growth metrics and digital infrastructure expansion make this a positive stock indicator."
+ },
+ "3e54268fc98b8b97": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Domestic sports tournament update."
+ },
+ "5d5e012e3cd4050a": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political activism and leadership news."
+ },
+ "b28ed693d1c2b99e": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Healthcare feature story about patient care."
+ },
+ "2c9c82d819fc3516": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Beauty product startup feature."
+ },
+ "de5bfeeea06421e3": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Celebrity food recipe."
+ },
+ "f3d654e98276d3a4": {
+  "is_stock_market": true,
+  "signal": "hold",
+  "company": "",
+  "rationale": "International trade negotiations impact macro market outlook."
+ },
+ "991a71a62f9ec86f": {
+  "is_stock_market": true,
+  "signal": "sell",
+  "company": "State Bank of India",
+  "rationale": "Cybersecurity incidents present short-term operational risks and negative sentiment."
+ },
+ "e914d4abc3c4bcec": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Entertainment industry news."
+ },
+ "a2efb8536d24f958": {
+  "is_stock_market": false,
+  "signal": "hold",
+  "company": "",
+  "rationale": "Political opposition statements."
+ }
+}

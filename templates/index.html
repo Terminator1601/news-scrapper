@@ -1,218 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market Pulse</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="top-nav">
-        <div class="nav-content">
-            <div class="brand">
-                <i class="fas fa-chart-line"></i>
-                <h1>Market Pulse</h1>
-            </div>
-            <div class="nav-controls">
-                <button class="theme-toggle" onclick="toggleTheme()">
-                    <i class="fas fa-sun"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
+{% extends "base.html" %}
 
-    <main class="container">
-        <div class="dashboard">
-            <aside class="sidebar">
-                <div class="filter-section">
-                    <h2><i class="fas fa-filter"></i> Filter News</h2>
-                    <form id="filter-form" action="{{ url_for('index') }}" method="get">
-                        <div class="select-wrapper">
-                            <label for="source"><i class="fas fa-newspaper"></i> News Source</label>
-                            <select name="source" id="source" onchange="this.form.submit()">
-                                <option value="">All Sources</option>
-                                {% for source in unique_sources %}
-                                    <option value="{{ source }}" {% if source == selected_source %}selected{% endif %}>{{ source }}</option>
-                                {% endfor %}
-                            </select>
-                        </div>
-                    </form>
-                </div>
+{% block masthead_extra %}
+    <p class="masthead-date">{{ today }}</p>
+{% endblock %}
 
-                <div class="stats-section">
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                        <div class="stat-info">
-                            <span class="stat-label">Headlines</span>
-                            <span class="stat-value">{{ headlines|length }}</span>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-rss"></i>
-                        </div>
-                        <div class="stat-info">
-                            <span class="stat-label">Source</span>
-                            <span class="stat-value">{{ selected_source if selected_source else 'All' }}</span>
-                        </div>
-                    </div>
-                </div>
+{% block masthead_actions %}
+    <form id="refresh-form" action="{{ url_for('run_script') }}" method="post">
+        <button type="submit" class="button-primary" id="refresh-button">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="refresh-icon">
+                <path d="M13.5 8a5.5 5.5 0 1 1-1.6-3.9M13.5 1.5v3h-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Refresh data
+        </button>
+    </form>
+{% endblock %}
 
-                <div class="action-section">
-                    <form id="refresh-form" action="{{ url_for('run_script') }}" method="post" onsubmit="handleRefresh(event)">
-                        <button type="submit" class="run-script-button">
-                            <i class="fas fa-sync-alt"></i>
-                            <span>Refresh Data</span>
-                        </button>
-                    </form>
-                </div>
-            </aside>
-
-            <section class="content">
-                <div id="headlines" class="headlines-grid">
-                    {% for headline in headlines %}
-                        {% if not selected_source or headline[0] == selected_source %}
-                            <article class="headline-card" data-aos="fade-up">
-                                <div class="headline-meta">
-                                    <span class="source"><i class="fas fa-broadcast-tower"></i> {{ headline[0] }}</span>
-                                    <span class="timestamp"><i class="fas fa-history"></i> {{ headline[3] }}</span>
-                                </div>
-                                <div class="headline-content">
-                                    {% if headline[2] != 'N/A' %}
-                                        <a href="{{ headline[2] }}" target="_blank" class="headline-title">
-                                            {{ headline[1] }}
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                    {% else %}
-                                        <h3 class="headline-title">{{ headline[1] }}</h3>
-                                    {% endif %}
-                                </div>
-                                <div class="headline-action">
-                                    <span class="result-badge {% if headline[4] == 'Buy shares of the company' %}buy{% elif headline[4] == 'Sell shares of the company' %}sell{% else %}hold{% endif %}">
-                                        <i class="fas {% if headline[4] == 'Buy shares of the company' %}fa-chart-line{% elif headline[4] == 'Sell shares of the company' %}fa-chart-line-down{% else %}fa-balance-scale{% endif %}"></i>
-                                        {{ headline[4] }}
-                                    </span>
-                                </div>
-                            </article>
-                        {% endif %}
+{% block content %}
+    <main class="layout">
+        <aside class="rail">
+            <nav class="rail-block" aria-label="Sources">
+                <h2 class="rail-heading">Sources</h2>
+                <ul class="source-list">
+                    <li>
+                        <a class="source-link {% if not selected_source %}is-active{% endif %}" href="{{ url_for('index') }}">
+                            All sources<strong>{{ all_count }}</strong>
+                        </a>
+                    </li>
+                    {% for source, count in source_counts.items() %}
+                        <li>
+                            <a class="source-link {% if source == selected_source %}is-active{% endif %}" href="{{ url_for('index', source=source) }}">
+                                {{ source }}<strong>{{ count }}</strong>
+                            </a>
+                        </li>
                     {% endfor %}
+                </ul>
+            </nav>
+
+            <section class="rail-block">
+                <h2 class="rail-heading">Signals</h2>
+                {% set total = total_headlines if total_headlines > 0 else 1 %}
+                <div class="signal-bar" role="img" aria-label="{{ signal_counts.buy }} buy, {{ signal_counts.hold }} hold, {{ signal_counts.sell }} sell">
+                    <span class="signal-bar-buy" style="flex-grow: {{ signal_counts.buy }}"></span>
+                    <span class="signal-bar-hold" style="flex-grow: {{ signal_counts.hold }}"></span>
+                    <span class="signal-bar-sell" style="flex-grow: {{ signal_counts.sell }}"></span>
                 </div>
+                <ul class="signal-legend">
+                    <li><span class="dot dot-buy"></span>Buy<strong>{{ signal_counts.buy }}</strong></li>
+                    <li><span class="dot dot-hold"></span>Hold<strong>{{ signal_counts.hold }}</strong></li>
+                    <li><span class="dot dot-sell"></span>Sell<strong>{{ signal_counts.sell }}</strong></li>
+                </ul>
+                <p class="rail-note">{{ total_headlines }} stock headline{{ 's' if total_headlines != 1 }}{% if selected_source %} from {{ selected_source }}{% endif %}</p>
             </section>
-        </div>
+        </aside>
+
+        <section class="wire">
+            {% if headlines %}
+                <ol class="stories">
+                    {% for headline in headlines %}
+                        {% set sig = 'buy' if 'Buy' in headline[4] else ('sell' if 'Sell' in headline[4] else 'hold') %}
+                        {% set company = headline[5] if headline|length > 6 else '' %}
+                        {% set rationale = headline[6] if headline|length > 6 else '' %}
+                        {% set lead = page == 1 and loop.first %}
+                        <li class="story{% if lead %} story-lead{% endif %}">
+                            <div class="story-meta">
+                                <span class="story-source">{{ headline[0] }}</span>
+                                {% if company %}<span class="story-company">{{ company }}</span>{% endif %}
+                                <span class="signal signal-{{ sig }}" title="{{ rationale or headline[4] }}">
+                                    {% if sig == 'buy' %}Buy{% elif sig == 'sell' %}Sell{% else %}Hold{% endif %}
+                                </span>
+                            </div>
+                            {% if headline[2] != 'N/A' %}
+                                <a class="story-headline" href="{{ headline[2] }}" target="_blank" rel="noopener">{{ headline[1] }}</a>
+                            {% else %}
+                                <p class="story-headline">{{ headline[1] }}</p>
+                            {% endif %}
+                            {% if lead %}
+                                <p class="story-call">{{ rationale or headline[4] }}</p>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ol>
+
+                {% if total_pages > 1 %}
+                    <nav class="pager" aria-label="Pages">
+                        {% if page > 1 %}
+                            <a class="pager-link" href="{{ url_for('index', page=page-1, source=selected_source or None) }}">Previous</a>
+                        {% else %}
+                            <span class="pager-link is-disabled">Previous</span>
+                        {% endif %}
+                        <span class="pager-status">Page {{ page }} of {{ total_pages }}</span>
+                        {% if page < total_pages %}
+                            <a class="pager-link" href="{{ url_for('index', page=page+1, source=selected_source or None) }}">Next</a>
+                        {% else %}
+                            <span class="pager-link is-disabled">Next</span>
+                        {% endif %}
+                    </nav>
+                {% endif %}
+            {% else %}
+                <div class="empty">
+                    <p class="empty-title">No headlines yet</p>
+                    <p class="empty-body">Refresh data to fetch the latest stock-market headlines{% if selected_source %}, or choose a different source{% endif %}.</p>
+                </div>
+            {% endif %}
+        </section>
     </main>
 
-    <div id="loader" class="loader">
-        <div class="loader-content">
-            <div class="loader-spinner"></div>
-            <span>Updating Market Data...</span>
+    <div id="loader" class="loader" role="status" aria-live="polite" hidden>
+        <div class="loader-card">
+            <div class="loader-spinner" aria-hidden="true"></div>
+            <p>Fetching fresh headlines from every source. This can take a minute.</p>
         </div>
     </div>
+{% endblock %}
 
-    <button id="scroll-top" class="scroll-top" onclick="scrollToTop()">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
+{% block scripts %}
     <script>
-        function toggleTheme() {
-            const body = document.body;
-            const toggleButton = document.querySelector('.theme-toggle');
-            const sunIcon = toggleButton.querySelector('.fa-sun');
-            const isDay = body.classList.contains('day');
-
-            if (isDay) {
-                body.classList.remove('day');
-                body.classList.add('night');
-                sunIcon.classList.remove('fa-sun');
-                sunIcon.classList.add('fa-moon');
-                localStorage.setItem('theme', 'night');
-            } else {
-                body.classList.remove('night');
-                body.classList.add('day');
-                sunIcon.classList.remove('fa-moon');
-                sunIcon.classList.add('fa-sun');
-                localStorage.setItem('theme', 'day');
-            }
-
-            document.querySelectorAll('.container, .headline-card, .headline-title, .source, .pagination a, .controls, .stats-bar').forEach(element => {
-                element.classList.toggle('day');
-                element.classList.toggle('night');
-            });
-        }
-
-        function loadTheme() {
-            const storedTheme = localStorage.getItem('theme') || 'day';
-            const body = document.body;
-            const toggleButton = document.querySelector('.theme-toggle');
-            const sunIcon = toggleButton.querySelector('.fa-sun');
-
-            if (storedTheme === 'night') {
-                body.classList.add('night');
-                sunIcon.classList.remove('fa-sun');
-                sunIcon.classList.add('fa-moon');
-            } else {
-                body.classList.add('day');
-            }
-
-            document.querySelectorAll('.container, .headline-card, .headline-title, .source, .pagination a, .controls, .stats-bar').forEach(element => {
-                element.classList.add(storedTheme);
-            });
-        }
-
-        function handleRefresh(event) {
+        document.getElementById('refresh-form').addEventListener('submit', function (event) {
             event.preventDefault();
-            const loader = document.getElementById('loader');
-            const form = event.target;
-            const button = form.querySelector('button');
-            
-            loader.classList.add('visible');
+            var button = document.getElementById('refresh-button');
+            var loader = document.getElementById('loader');
             button.disabled = true;
-            button.querySelector('.fa-sync-alt').classList.add('fa-spin');
+            loader.hidden = false;
 
-            fetch(form.action, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-            })
-            .then(response => {
-                if (!response.ok) throw new Error('Network response was not ok');
-                window.location.reload();
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                loader.classList.remove('visible');
-                button.disabled = false;
-                button.querySelector('.fa-sync-alt').classList.remove('fa-spin');
-                alert('Failed to refresh headlines. Please try again.');
-            });
-        }
-
-        // Scroll to top functionality
-        const scrollTopButton = document.getElementById('scroll-top');
-        
-        window.onscroll = function() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                scrollTopButton.classList.add('visible');
-            } else {
-                scrollTopButton.classList.remove('visible');
-            }
-        };
-        
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-
-        // Initialize
-        window.addEventListener('load', () => {
-            loadTheme();
+            fetch(this.action, { method: 'POST' })
+                .then(function (response) {
+                    if (!response.ok) {
+                        return response.text().then(function (text) {
+                            throw new Error(text || 'Could not refresh headlines.');
+                        });
+                    }
+                    window.location.reload();
+                })
+                .catch(function (error) {
+                    loader.hidden = true;
+                    button.disabled = false;
+                    alert(error.message || 'Could not refresh headlines. Check that the server is running, then try again.');
+                });
         });
     </script>
-</body>
-</html>
+{% endblock %}
