@@ -1,8 +1,24 @@
 import requests
+import feedparser
 from bs4 import BeautifulSoup
 import csv
 import pandas as pd
+from urllib.parse import urljoin
 from sources import news_sources  # Assuming news_sources is a dictionary of sources
+
+try:
+    from gemini_analyzer import analyze_headlines, headline_key
+except ImportError:  # google-genai not installed; keyword analysis still works
+    analyze_headlines = None
+    headline_key = None
+
+# Browser-like headers: several sources (Hindustan Times, Business Standard)
+# reject requests that identify as python-requests
+REQUEST_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+}
 
 # Function to filter headlines
 def filter_headlines(input_filename, output_filename):
@@ -22,19 +38,41 @@ def filter_headlines(input_filename, output_filename):
             if word_count > 2:  # Only keep headlines with more than 2 words
                 writer.writerow(row)
 
+# Function to fetch headlines from an RSS feed; returns (title, link) tuples
+def fetch_rss_headlines(source_info):
+    try:
+        response = requests.get(
+            source_info["url"], headers=REQUEST_HEADERS, timeout=20)
+        if response.status_code != 200:
+            print(
+                f"Failed to fetch {source_info['url']} (status {response.status_code})")
+            return []
+        feed = feedparser.parse(response.content)
+        return [(entry.get("title", "").strip(), entry.get("link") or 'N/A')
+                for entry in feed.entries]
+    except requests.exceptions.RequestException as e:
+        print(f"An error occurred: {e}")
+        return []
+
 # Function to fetch headlines based on the mapping
 def fetch_headlines(source_info):
+    if source_info.get("type") == "rss":
+        return fetch_rss_headlines(source_info)
     try:
-        response = requests.get(source_info["url"], allow_redirects=False)
-        if response.status_code in [301, 302]:  # Check if it's a redirect
-            print(f"Redirect encountered for {source_info['url']}")
+        response = requests.get(
+            source_info["url"], headers=REQUEST_HEADERS, timeout=20)
+        if response.status_code != 200:
+            print(
+                f"Failed to fetch {source_info['url']} (status {response.status_code})")
             return []
-        soup = BeautifulSoup(response.text, 'html.parser')
+        # Parse from bytes so BeautifulSoup reads the page's declared charset
+        # (response.text can mis-guess and produce mojibake like â€™)
+        soup = BeautifulSoup(response.content, 'html.parser')
 
-        # Extracting headlines based on the tags specified
+        # Extracting headlines based on the tags/CSS selectors specified
         headlines = []
         for tag in source_info["headline_tags"]:
-            headlines.extend(soup.find_all(tag))
+            headlines.extend(soup.select(tag))
         return headlines
     except requests.exceptions.RequestException as e:
         print(f"An error occurred: {e}")
@@ -45,12 +83,15 @@ def save_headlines_to_csv(source_name, headlines, filename, base_url=None):
     with open(filename, 'a', newline='', encoding='utf-8') as file:  # Open file with UTF-8 encoding
         writer = csv.writer(file)
         for headline in headlines:
+            if isinstance(headline, tuple):  # RSS entries arrive as (title, link)
+                headline_text, link = headline
+                writer.writerow([source_name, headline_text, link])
+                continue
             headline_text = headline.get_text().strip()
-            href = headline.find('a')
-            if href and 'href' in href.attrs:
-                link = href['href']
-                if link.startswith('/'):  # Handle relative URLs
-                    link = base_url + link
+            # The link may be inside the headline tag or wrapping it
+            anchor = headline.find('a') or headline.find_parent('a')
+            if anchor and 'href' in anchor.attrs:
+                link = urljoin(base_url, anchor['href'])
             else:
                 link = 'N/A'  # If no href found
             writer.writerow([source_name, headline_text, link])
@@ -74,8 +115,9 @@ stock_keywords = [
     'yield curve', 'treasury', 'bond market', 'fixed income', 'junk bond', 'credit spread'
 ]
 
-# Function to label headlines based on keywords
-def label_headlines(input_filename, output_filename):
+# Function to label headlines, preferring Gemini analysis over keywords
+def label_headlines(input_filename, output_filename, analysis=None):
+    analysis = analysis or {}
     with open(input_filename, 'r', encoding='utf-8') as infile, open(output_filename, 'w', newline='', encoding='utf-8') as outfile:
         reader = csv.reader(infile)
         writer = csv.writer(outfile)
@@ -85,20 +127,29 @@ def label_headlines(input_filename, output_filename):
         header.append("Label")
         writer.writerow(header)
 
-        # Assign labels based on keywords
         for row in reader:
-            headline = row[1].strip().lower()  # Assuming the headline is in the second column
-            label = 'general'  # Default label
+            headline = row[1].strip()
+            analyzed = analysis.get(headline_key(headline)) if headline_key else None
 
-            # Check if any stock-related keyword is in the headline
-            if any(keyword in headline for keyword in stock_keywords):
-                label = 'stocks'
+            if analyzed is not None:
+                label = 'stocks' if analyzed['is_stock_market'] else 'general'
+            else:
+                # Keyword fallback
+                label = 'general'
+                if any(keyword in headline.lower() for keyword in stock_keywords):
+                    label = 'stocks'
 
             row.append(label)
             writer.writerow(row)
 
+SIGNAL_TO_RESULT = {
+    'buy': 'Buy shares of the company',
+    'sell': 'Sell shares of the company',
+    'hold': 'Hold/No action',
+}
+
 # Function to add 'result' column based on headline analysis
-def add_result_column(df):
+def add_result_column(df, analysis=None):
     # Expanded keywords for buy and sell decisions
     buy_keywords = [
         'invested', 'buy', 'acquire', 'acquisition', 'purchase', 'merger',
@@ -113,9 +164,14 @@ def add_result_column(df):
         'withdrawal', 'close down', 'shutdown', 'downsizing', 'layoffs', 'job cuts'
     ]
 
+    analysis = analysis or {}
+
     # Function to determine the result based on the headline
     def determine_result(headline):
-        headline_lower = headline.lower()  # Convert headline to lowercase for case-insensitive matching
+        analyzed = analysis.get(headline_key(headline)) if headline_key else None
+        if analyzed is not None:
+            return SIGNAL_TO_RESULT[analyzed['signal']]
+        headline_lower = headline.lower()  # Keyword fallback
         if any(word in headline_lower for word in buy_keywords):
             return 'Buy shares of the company'
         elif any(word in headline_lower for word in sell_keywords):
@@ -123,8 +179,14 @@ def add_result_column(df):
         else:
             return 'Hold/No action'
 
+    def analysis_field(headline, field):
+        analyzed = analysis.get(headline_key(headline)) if headline_key else None
+        return analyzed[field] if analyzed else ''
+
     # Apply the function to the 'Headline' column to create the 'result' column
     df['result'] = df['Headline'].apply(determine_result)
+    df['Company'] = df['Headline'].apply(lambda h: analysis_field(h, 'company'))
+    df['Rationale'] = df['Headline'].apply(lambda h: analysis_field(h, 'rationale'))
 
     # Save the updated DataFrame to a new CSV file
     df.to_csv('./headlines/result_file.csv', index=False)
@@ -166,10 +228,19 @@ if __name__ == "__main__":
     filter_headlines(input_csv1, output_csv1)
     print(f"Filtered headlines have been saved to '{output_csv1}'")
 
+    # Analyze headlines with Gemini (cached; falls back to keywords per headline)
+    analysis = {}
+    if analyze_headlines is not None:
+        with open(output_csv1, 'r', encoding='utf-8') as file:
+            reader = csv.reader(file)
+            next(reader)  # Skip the header
+            all_headlines = [row[1] for row in reader]
+        analysis = analyze_headlines(all_headlines)
+
     # Label headlines
     input_csv2 = './headlines/filtered_headlines.csv'
     output_csv2 = './headlines/labeled_headlines.csv'
-    label_headlines(input_csv2, output_csv2)
+    label_headlines(input_csv2, output_csv2, analysis)
     print(f"Labeled headlines have been saved to '{output_csv2}'")
 
     # Clean the data
@@ -180,5 +251,5 @@ if __name__ == "__main__":
     # Add result column
     df = pd.read_csv('./headlines/cleaned_file.csv')
     print("Adding labels whether to buy, sell or hold...")
-    add_result_column(df)
+    add_result_column(df, analysis)
     print("--------------Executed--------------")

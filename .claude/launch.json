@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "news-scraper",
+      "runtimeExecutable": "/Users/rishisharma16/Desktop/rishi/news-scrapper/venv/bin/python",
+      "runtimeArgs": ["-m", "flask", "--app", "app", "run", "--port", "5001", "--debug"],
+      "port": 5001
+    }
+  ]
+}
