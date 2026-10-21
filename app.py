@@ -2,17 +2,21 @@ from flask import Flask, render_template, request, redirect, url_for
 import csv
 import subprocess
 import sys
+import threading
 from datetime import datetime
 
 app = Flask(__name__)
+
+# One refresh at a time: concurrent runs would race on the CSV files
+refresh_lock = threading.Lock()
 
 ITEMS_PER_PAGE = 20  # Number of headlines per page
 
 
 @app.route('/')
 def index():
-    # Get the page number from the URL, default to 1
-    page = int(request.args.get('page', 1))
+    # Get the page number from the URL; non-numeric values fall back to 1
+    page = request.args.get('page', 1, type=int) or 1
     # Get the selected source from the URL
     selected_source = request.args.get('source', '')
 
@@ -108,15 +112,16 @@ def story_mark_read(story_id):
 
 @app.route('/run_script', methods=['POST'])
 def run_script():
-    print("Button clicked! Running the script...")
+    if not refresh_lock.acquire(blocking=False):
+        return 'A refresh is already running. Try again in a minute.', 409
     try:
         subprocess.run([sys.executable, "./mainFile.py"], check=True)
-        print("Main.py executed successfully!")
     except subprocess.CalledProcessError as e:
-        print(f"An error occurred while running Main.py: {e}")
-    # Here you can execute any function or script you want
+        return f'The scraper failed (exit code {e.returncode}). Check the server log.', 500
+    finally:
+        refresh_lock.release()
 
-    # After running your script, redirect back to the homepage
+    # After a successful run, redirect back to the homepage
     return redirect(url_for('index'))
 
 

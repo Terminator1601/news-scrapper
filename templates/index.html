@@ -124,13 +124,17 @@
 
             fetch(this.action, { method: 'POST' })
                 .then(function (response) {
-                    if (!response.ok) throw new Error('Refresh failed');
+                    if (!response.ok) {
+                        return response.text().then(function (text) {
+                            throw new Error(text || 'Could not refresh headlines.');
+                        });
+                    }
                     window.location.reload();
                 })
-                .catch(function () {
+                .catch(function (error) {
                     loader.hidden = true;
                     button.disabled = false;
-                    alert('Could not refresh headlines. Check that the server is running, then try again.');
+                    alert(error.message || 'Could not refresh headlines. Check that the server is running, then try again.');
                 });
         });
     </script>
