@@ -71,6 +71,41 @@ def index():
     )
 
 
+@app.route('/stories')
+def stories():
+    import storyline
+    return render_template('stories.html', stories=storyline.list_stories())
+
+
+@app.route('/story/<int:story_id>')
+def story_detail(story_id):
+    import storyline
+    import json
+    view = storyline.story_view(story_id)
+    if view is None:
+        return redirect(url_for('stories'))
+
+    source_names = sorted({a['source_name'] for a in view['articles']})
+    articles_by_id = {a['id']: a for a in view['articles']}
+    claims = []
+    if view['latest']:
+        for claim in json.loads(view['latest']['claims']):
+            names = sorted({articles_by_id[i]['source_name']
+                            for i in claim['evidence_ids'] if i in articles_by_id})
+            claims.append({'text': claim['text'], 'source_names': names})
+    return render_template('story.html', view=view,
+                           source_names=source_names, claims=claims)
+
+
+@app.route('/story/<int:story_id>/read', methods=['POST'])
+def story_mark_read(story_id):
+    import storyline
+    version_id = request.form.get('version_id', type=int)
+    if version_id:
+        storyline.mark_read(story_id, version_id)
+    return redirect(url_for('story_detail', story_id=story_id))
+
+
 @app.route('/run_script', methods=['POST'])
 def run_script():
     print("Button clicked! Running the script...")

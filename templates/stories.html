@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Stories — Market Pulse{% endblock %}
+
+{% block content %}
+    <main class="layout layout-single">
+        <section class="wire">
+            <h1 class="page-title">Followed stories</h1>
+            <p class="page-intro">Each story gathers coverage of one event. Open it for a cited summary, its sources, and what changed since you last read it.</p>
+            {% if stories %}
+                <ol class="stories">
+                    {% for story in stories %}
+                        <li class="story">
+                            <div class="story-meta">
+                                <span class="story-source">{{ story.article_count }} article{{ 's' if story.article_count != 1 }}</span>
+                                {% if story.latest_rev %}
+                                    {% if story.read_rev and story.read_rev < story.latest_rev %}
+                                        <span class="signal signal-buy">{{ story.latest_rev - story.read_rev }} update{{ 's' if story.latest_rev - story.read_rev != 1 }}</span>
+                                    {% elif story.read_rev %}
+                                        <span class="signal signal-hold">Caught up</span>
+                                    {% else %}
+                                        <span class="signal signal-hold">Unread</span>
+                                    {% endif %}
+                                {% endif %}
+                            </div>
+                            <a class="story-headline" href="{{ url_for('story_detail', story_id=story.id) }}">{{ story.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ol>
+            {% else %}
+                <div class="empty">
+                    <p class="empty-title">No followed stories yet</p>
+                    <p class="empty-body">Stories appear here once an event is followed and coverage is collected.</p>
+                </div>
+            {% endif %}
+        </section>
+    </main>
+{% endblock %}
