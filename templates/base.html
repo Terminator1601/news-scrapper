@@ -60,12 +60,17 @@
                 <button type="button" class="chat-close" id="chat-close" aria-label="Close assistant">✕</button>
             </header>
             <div class="chat-log" id="chat-log" aria-live="polite">
-                <div class="chat-msg chat-msg-bot">Ask me about today's headlines, a company, or anything in the markets. I answer from your sources first, then the web.</div>
+                <div class="chat-msg chat-msg-bot">Ask me about today's headlines, a company, or anything in the markets.</div>
+                <div class="chat-starters" id="chat-starters">
+                    <button type="button">What's moving the market today?</button>
+                    <button type="button">Catch me up on the Jio IPO</button>
+                    <button type="button">Which stocks have sell signals?</button>
+                </div>
             </div>
             <form class="chat-form" id="chat-form">
                 <label class="visually-hidden" for="chat-input">Your question</label>
                 <input id="chat-input" type="text" autocomplete="off" maxlength="2000" placeholder="Ask about a headline or company">
-                <button type="submit" class="button-primary">Send</button>
+                <button type="submit" class="button-primary" id="chat-send">Send</button>
             </form>
         </section>
         <button type="button" class="chat-fab" id="chat-fab" aria-expanded="false" aria-label="Open assistant">
@@ -89,9 +94,18 @@
             var closeButton = document.getElementById('chat-close');
             var form = document.getElementById('chat-form');
             var input = document.getElementById('chat-input');
+            var send = document.getElementById('chat-send');
             var log = document.getElementById('chat-log');
+            var starters = document.getElementById('chat-starters');
             var history = [];
             var busy = false;
+
+            starters.addEventListener('click', function (event) {
+                var button = event.target.closest('button');
+                if (!button) return;
+                input.value = button.textContent;
+                form.requestSubmit();
+            });
 
             function setOpen(open) {
                 panel.hidden = !open;
@@ -115,11 +129,14 @@
                 var question = input.value.trim();
                 if (!question || busy) return;
                 busy = true;
+                send.disabled = true;
+                if (starters) { starters.remove(); starters = null; }
                 input.value = '';
                 append('user', question);
                 history.push({ role: 'user', text: question });
-                var pending = append('bot', 'Thinking…');
-                pending.classList.add('is-pending');
+                var pending = append('bot', '');
+                pending.classList.add('chat-typing');
+                pending.innerHTML = '<span></span><span></span><span></span>';
 
                 fetch('/api/chat', {
                     method: 'POST',
@@ -133,17 +150,19 @@
                         });
                     })
                     .then(function (reply) {
-                        pending.classList.remove('is-pending');
+                        pending.classList.remove('chat-typing');
                         pending.textContent = reply;
                         history.push({ role: 'bot', text: reply });
                     })
                     .catch(function (error) {
-                        pending.classList.remove('is-pending');
+                        pending.classList.remove('chat-typing');
                         pending.classList.add('is-error');
                         pending.textContent = error.message;
                     })
                     .finally(function () {
                         busy = false;
+                        send.disabled = false;
+                        input.focus();
                         log.scrollTop = log.scrollHeight;
                     });
             });
