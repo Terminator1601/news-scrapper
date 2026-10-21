@@ -110,6 +110,21 @@ def story_mark_read(story_id):
     return redirect(url_for('story_detail', story_id=story_id))
 
 
+@app.route('/api/chat', methods=['POST'])
+def chat_api():
+    data = request.get_json(silent=True) or {}
+    messages = data.get('messages')
+    if not isinstance(messages, list) or not messages:
+        return {'error': 'Send a messages list.'}, 400
+    try:
+        import chatbot
+        return {'reply': chatbot.answer(messages)}
+    except (RuntimeError, ValueError) as error:
+        return {'error': str(error)}, 503
+    except Exception:
+        return {'error': 'The assistant could not answer that. Try again.'}, 502
+
+
 @app.route('/run_script', methods=['POST'])
 def run_script():
     if not refresh_lock.acquire(blocking=False):

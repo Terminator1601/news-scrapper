@@ -53,12 +53,101 @@
 
     {% block content %}{% endblock %}
 
+    <div class="chat-widget">
+        <section class="chat-panel" id="chat-panel" hidden aria-label="Market Pulse assistant">
+            <header class="chat-head">
+                <h2>Ask Market Pulse</h2>
+                <button type="button" class="chat-close" id="chat-close" aria-label="Close assistant">✕</button>
+            </header>
+            <div class="chat-log" id="chat-log" aria-live="polite">
+                <div class="chat-msg chat-msg-bot">Ask me about today's headlines, a company, or anything in the markets. I answer from your sources first, then the web.</div>
+            </div>
+            <form class="chat-form" id="chat-form">
+                <label class="visually-hidden" for="chat-input">Your question</label>
+                <input id="chat-input" type="text" autocomplete="off" maxlength="2000" placeholder="Ask about a headline or company">
+                <button type="submit" class="button-primary">Send</button>
+            </form>
+        </section>
+        <button type="button" class="chat-fab" id="chat-fab" aria-expanded="false" aria-label="Open assistant">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 5.5h16v11H9l-5 4v-15Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M8 10h8M8 13h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+
     <script>
         document.getElementById('theme-toggle').addEventListener('click', function () {
             var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
             document.documentElement.setAttribute('data-theme', next);
             try { localStorage.setItem('theme', next); } catch (e) { /* ignore */ }
         });
+
+        (function () {
+            var fab = document.getElementById('chat-fab');
+            var panel = document.getElementById('chat-panel');
+            var closeButton = document.getElementById('chat-close');
+            var form = document.getElementById('chat-form');
+            var input = document.getElementById('chat-input');
+            var log = document.getElementById('chat-log');
+            var history = [];
+            var busy = false;
+
+            function setOpen(open) {
+                panel.hidden = !open;
+                fab.setAttribute('aria-expanded', String(open));
+                if (open) input.focus();
+            }
+            fab.addEventListener('click', function () { setOpen(panel.hidden); });
+            closeButton.addEventListener('click', function () { setOpen(false); });
+
+            function append(role, text) {
+                var bubble = document.createElement('div');
+                bubble.className = 'chat-msg chat-msg-' + role;
+                bubble.textContent = text;
+                log.appendChild(bubble);
+                log.scrollTop = log.scrollHeight;
+                return bubble;
+            }
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                var question = input.value.trim();
+                if (!question || busy) return;
+                busy = true;
+                input.value = '';
+                append('user', question);
+                history.push({ role: 'user', text: question });
+                var pending = append('bot', 'Thinking…');
+                pending.classList.add('is-pending');
+
+                fetch('/api/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ messages: history })
+                })
+                    .then(function (response) {
+                        return response.json().then(function (data) {
+                            if (!response.ok) throw new Error(data.error || 'The assistant could not answer.');
+                            return data.reply;
+                        });
+                    })
+                    .then(function (reply) {
+                        pending.classList.remove('is-pending');
+                        pending.textContent = reply;
+                        history.push({ role: 'bot', text: reply });
+                    })
+                    .catch(function (error) {
+                        pending.classList.remove('is-pending');
+                        pending.classList.add('is-error');
+                        pending.textContent = error.message;
+                    })
+                    .finally(function () {
+                        busy = false;
+                        log.scrollTop = log.scrollHeight;
+                    });
+            });
+        })();
     </script>
     {% block scripts %}{% endblock %}
 </body>
